@@ -7,7 +7,7 @@
     
 
     <title>
-      归档 
+      隐式动画 | Stago 
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,13 +16,19 @@
     
     
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="归档">
-<meta property="og:url" content="http://yoursite.com/archive/index.html">
+    <meta name="description" content="Quick StartCreate a new post每一个UIView内部都默认关联着一个CALayer，我们可以称这个Layer为Root Layer（根层）所有的非Root Layer，也就是手动创建的CALayer对象，都存在着隐式动画
+什么是隐式动画当非Root Layer的部分属性进行修改时，默认会自动产生一些动画效果而这些属性称为Animatable Properties（可动画属">
+<meta property="og:type" content="article">
+<meta property="og:title" content="隐式动画 | Stago">
+<meta property="og:url" content="http://yoursite.com/2013/07/13/隐式动画/index.html">
 <meta property="og:site_name" content="Stago">
-<meta property="og:updated_time" content="2017-03-18T08:05:59.000Z">
+<meta property="og:description" content="Quick StartCreate a new post每一个UIView内部都默认关联着一个CALayer，我们可以称这个Layer为Root Layer（根层）所有的非Root Layer，也就是手动创建的CALayer对象，都存在着隐式动画
+什么是隐式动画当非Root Layer的部分属性进行修改时，默认会自动产生一些动画效果而这些属性称为Animatable Properties（可动画属">
+<meta property="og:updated_time" content="2017-03-20T05:50:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="归档">
+<meta name="twitter:title" content="隐式动画 | Stago">
+<meta name="twitter:description" content="Quick StartCreate a new post每一个UIView内部都默认关联着一个CALayer，我们可以称这个Layer为Root Layer（根层）所有的非Root Layer，也就是手动创建的CALayer对象，都存在着隐式动画
+什么是隐式动画当非Root Layer的部分属性进行修改时，默认会自动产生一些动画效果而这些属性称为Animatable Properties（可动画属">
     
     
     
@@ -147,31 +153,55 @@ classes that you can use:
 
   <header class="post-header">
     
-    <h1 class="post-title">归档</h1>
+    <h1 class="post-title">隐式动画</h1>
 
-    <section id="post-content" class="article-content post">
-        
-    </section>
+    
 
+    <div class="post-meta">
+      <time datetime="2013-07-13" class="post-meta__date date">2013-07-13</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
 
   </header>
 
+  <section id="post-content" class="article-content post">
+    <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><p>每一个UIView内部都默认关联着一个CALayer，我们可以称这个Layer为Root Layer（根层）<br>所有的非Root Layer，也就是手动创建的CALayer对象，都存在着隐式动画</p>
+<p>什么是隐式动画<br>当非Root Layer的部分属性进行修改时，默认会自动产生一些动画效果<br>而这些属性称为Animatable Properties（可动画属性） </p>
+<ul>
+<li>(void)viewDidLoad {<br>[super viewDidLoad];</li>
+</ul>
+<p>self.layer = [CALayer layer];<br>self.layer.backgroundColor = [UIColor redColor].CGColor;<br>self.layer.bounds = CGRectMake(0, 0, 100, 100);<br>self.layer.anchorPoint = CGPointZero;<br>[self.view.layer addSublayer:self.layer];</p>
+<p>}</p>
+<ul>
+<li>(void)touchesBegan:(NSSet <em>)touches withEvent:(UIEvent </em>)event {</li>
+</ul>
+<p>//隐式动画<br>self.layer.position = CGPointMake(200, 200);</p>
+<p>}</p>
+<p>默认是带有动画效果的，如果不想加上动画效果可以这样写</p>
+<ul>
+<li>(void)touchesBegan:(NSSet <em>)touches withEvent:(UIEvent </em>)event {</li>
+</ul>
+<p>[CATransaction begin];<br>[CATransaction setDisableActions:YES];</p>
+<p>//隐式动画<br>self.layer.position = CGPointMake(200, 200);</p>
+<p>[CATransaction commit];</p>
+<p>}</p>
+
+  </section>
+
+  
+  
 </article>
 
-<div class="archive-meta">
 
-
-
-
-
-
-    <h3>归档</h3>
-    <div class="archiveslist">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">July 2013</a><span class="archive-list-count">47</span></li></ul>
-    </div>
-
-
-</div>
             <footer class="footer">
 
     <span class="footer__copyright">&copy; | <a href="http://perhapsdone@163.com">Stago</a> | never lose my passion.
@@ -200,6 +230,18 @@ classes that you can use:
 
 
     
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
     
     
     <!--kill ie6 -->

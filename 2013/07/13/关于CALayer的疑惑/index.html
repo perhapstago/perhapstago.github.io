@@ -7,7 +7,7 @@
     
 
     <title>
-      归档 
+      关于CALayer的疑惑 | Stago 
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,13 +16,25 @@
     
     
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="归档">
-<meta property="og:url" content="http://yoursite.com/archive/index.html">
+    <meta name="description" content="Quick StartCreate a new post
+CALayer是定义在QuartzCore框架中
+CGImageRef、CGColorRef两种数据类型是定义在CoreGraphics框架中的
+UIColor、UIImage是定义在UIKit框架中的QuartzCore和CoreGraphics是跨平台的，在iOS和Mac OS X上都能使用，但是UIKit只能在iOS中使用为了保证可移">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于CALayer的疑惑 | Stago">
+<meta property="og:url" content="http://yoursite.com/2013/07/13/关于CALayer的疑惑/index.html">
 <meta property="og:site_name" content="Stago">
-<meta property="og:updated_time" content="2017-03-18T08:05:59.000Z">
+<meta property="og:description" content="Quick StartCreate a new post
+CALayer是定义在QuartzCore框架中
+CGImageRef、CGColorRef两种数据类型是定义在CoreGraphics框架中的
+UIColor、UIImage是定义在UIKit框架中的QuartzCore和CoreGraphics是跨平台的，在iOS和Mac OS X上都能使用，但是UIKit只能在iOS中使用为了保证可移">
+<meta property="og:updated_time" content="2017-03-20T05:51:00.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="归档">
+<meta name="twitter:title" content="关于CALayer的疑惑 | Stago">
+<meta name="twitter:description" content="Quick StartCreate a new post
+CALayer是定义在QuartzCore框架中
+CGImageRef、CGColorRef两种数据类型是定义在CoreGraphics框架中的
+UIColor、UIImage是定义在UIKit框架中的QuartzCore和CoreGraphics是跨平台的，在iOS和Mac OS X上都能使用，但是UIKit只能在iOS中使用为了保证可移">
     
     
     
@@ -147,31 +159,52 @@ classes that you can use:
 
   <header class="post-header">
     
-    <h1 class="post-title">归档</h1>
+    <h1 class="post-title">关于CALayer的疑惑</h1>
 
-    <section id="post-content" class="article-content post">
-        
-    </section>
+    
 
+    <div class="post-meta">
+      <time datetime="2013-07-13" class="post-meta__date date">2013-07-13</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
 
   </header>
 
+  <section id="post-content" class="article-content post">
+    <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><ol>
+<li>CALayer是定义在QuartzCore框架中</li>
+<li>CGImageRef、CGColorRef两种数据类型是定义在CoreGraphics框架中的</li>
+<li>UIColor、UIImage是定义在UIKit框架中的<br>QuartzCore和CoreGraphics是跨平台的，在iOS和Mac OS X上都能使用，但是UIKit只能在iOS中使用<br>为了保证可移植性，QuartCore不能使用UIImage、CGColor，只能使用CGImageRef、CGColorRef</li>
+</ol>
+<p>UIView和CALayer的选择<br>通过CALayer，就能做出跟UIView一样的界面效果，既然CALayer和UIView都能实现相同的效果，那究竟应该选择谁好呢？<br>对比CALayer，UIView多了一个事件处理的功能。也就是说，CALayer不能处理用户的触摸事件。而UIView可以。<br>所以如果显示出来的东西需要跟用户进行交互的话，用UIView;如果不需要用户进行交互，用UIView或者CALayer都可以，当然CALayer的性能会高一些，因为它少了事件处理的功能 ，更加轻量级。</p>
+<p>position 和 anchorPoint（锚点）<br>CALayer 有2个非常重要的属性：position 和 anchorPoint</p>
+<ul>
+<li>@property CGPoint position  </li>
+<li>用来设置CALayer在父层中的位置</li>
+<li>以父层的左上角为原点(0,0)</li>
+<li>@property CGPoint anchorPoint</li>
+<li>称为“定位点”、“锚点”</li>
+<li>决定这CALayer身上的哪个点会在position属性所指的位置</li>
+<li>以自己的左上角为原点（0，0）</li>
+<li>它的x、y取值范围都是0～1 ，默认值为（0.5，0.5）</li>
+</ul>
+
+  </section>
+
+  
+  
 </article>
 
-<div class="archive-meta">
 
-
-
-
-
-
-    <h3>归档</h3>
-    <div class="archiveslist">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/07/">July 2013</a><span class="archive-list-count">47</span></li></ul>
-    </div>
-
-
-</div>
             <footer class="footer">
 
     <span class="footer__copyright">&copy; | <a href="http://perhapsdone@163.com">Stago</a> | never lose my passion.
@@ -200,6 +233,18 @@ classes that you can use:
 
 
     
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
     
     
     <!--kill ie6 -->
