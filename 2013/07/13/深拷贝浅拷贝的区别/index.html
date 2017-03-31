@@ -16,16 +16,25 @@
     
     
 
-    <meta name="description" content="Quick StartCreate a new post">
+    <meta name="description" content="浅拷贝: 拷贝指向对象的指针, 只是使这个对象的引用计数+1让几个对象公用一个内存,然而当内存销毁的时候,指向这个内存空间的所有指针需要重新定义,不然会造成野指针错误
+深拷贝: 拷贝对象的具体内容, 新分配一块内存给这个对象拷贝结束之后,内存中的值是完全相同的,但是内存地址是不一样的,两个对象之间相互不影响,也互不干涉.
+
+浅拷贝像你和影子之间的关系: 你不在了, 你的影子也不在了;深拷贝就像你的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="深拷贝浅拷贝的区别 | Stago">
 <meta property="og:url" content="http://yoursite.com/2013/07/13/深拷贝浅拷贝的区别/index.html">
 <meta property="og:site_name" content="Stago">
-<meta property="og:description" content="Quick StartCreate a new post">
-<meta property="og:updated_time" content="2017-03-20T05:09:05.000Z">
+<meta property="og:description" content="浅拷贝: 拷贝指向对象的指针, 只是使这个对象的引用计数+1让几个对象公用一个内存,然而当内存销毁的时候,指向这个内存空间的所有指针需要重新定义,不然会造成野指针错误
+深拷贝: 拷贝对象的具体内容, 新分配一块内存给这个对象拷贝结束之后,内存中的值是完全相同的,但是内存地址是不一样的,两个对象之间相互不影响,也互不干涉.
+
+浅拷贝像你和影子之间的关系: 你不在了, 你的影子也不在了;深拷贝就像你的">
+<meta property="og:updated_time" content="2017-03-31T02:30:40.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="深拷贝浅拷贝的区别 | Stago">
-<meta name="twitter:description" content="Quick StartCreate a new post">
+<meta name="twitter:description" content="浅拷贝: 拷贝指向对象的指针, 只是使这个对象的引用计数+1让几个对象公用一个内存,然而当内存销毁的时候,指向这个内存空间的所有指针需要重新定义,不然会造成野指针错误
+深拷贝: 拷贝对象的具体内容, 新分配一块内存给这个对象拷贝结束之后,内存中的值是完全相同的,但是内存地址是不一样的,两个对象之间相互不影响,也互不干涉.
+
+浅拷贝像你和影子之间的关系: 你不在了, 你的影子也不在了;深拷贝就像你的">
     
     
     
@@ -171,7 +180,19 @@ classes that you can use:
   </header>
 
   <section id="post-content" class="article-content post">
-    <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3>
+    <p>浅拷贝: 拷贝指向对象的指针, 只是使这个对象的引用计数+1<br>让几个对象公用一个内存,然而当内存销毁的时候,指向这个内存空间的所有指针需要重新定义,不然会造成野指针错误</p>
+<p>深拷贝: 拷贝对象的具体内容, 新分配一块内存给这个对象<br>拷贝结束之后,内存中的值是完全相同的,但是内存地址是不一样的,两个对象之间相互不影响,也互不干涉.</p>
+<blockquote>
+<p>浅拷贝像你和影子之间的关系: 你不在了, 你的影子也不在了;<br>深拷贝就像你的克隆人, 你不在了, 克隆人还活着。</p>
+</blockquote>
+<p>OC 浅拷贝：<br>retain 始终是浅复制。返回对象是否可变与被复制的对象保持一致。<br>copy 对于不可变对象是浅复制。引用计数每次加一。始终返回一个不可变对象。</p>
+<p>oc 深拷贝：<br>copy 对于可变对象为深复制，引用计数不改变。<br>mutableCopy 始终是深复制，引用计数不改变。始终返回一个可变对象。</p>
+<p>区分<br>copy &amp;&amp; mutableCopy</p>
+<blockquote>
+<p>只有遵守了<nscopying,nsmutablecopying>这两个协议的类才有权限发送copy和mutableCopy消息</nscopying,nsmutablecopying></p>
+</blockquote>
+<p>对于不可变对象, 使用copy是浅拷贝, 使用mutableCopy是深拷贝;<br>对于可变对象, 使用copy或者mutableCopy都是深拷贝。</p>
+
   </section>
 
   
