@@ -17,24 +17,33 @@
     
 
     <meta name="description" content="http://liuzhichao.com/p/1408.html
-viewController的生命周期initWithCoder:(NSCoder )aDecoder：（如果使用storyboard或者xib）loadView：加载view
-viewDidLoad：view加载完毕viewWillAppear：控制器的view将要显示
-viewWillLayoutSubviews：控制器的vi">
+viewController的生命周期
+initWithCoder:(NSCoder *)aDecoder：（如果使用storyboard或者xib）
+loadView：加载view
+viewDidLoad：view加载完毕
+viewWillAppear：控制器的view将要显示
+viewWillLayoutSubviews：控制">
 <meta property="og:type" content="article">
 <meta property="og:title" content="控制器的生命周期 | Stago">
 <meta property="og:url" content="http://yoursite.com/2014/01/12/控制器的生命周期/index.html">
 <meta property="og:site_name" content="Stago">
 <meta property="og:description" content="http://liuzhichao.com/p/1408.html
-viewController的生命周期initWithCoder:(NSCoder )aDecoder：（如果使用storyboard或者xib）loadView：加载view
-viewDidLoad：view加载完毕viewWillAppear：控制器的view将要显示
-viewWillLayoutSubviews：控制器的vi">
-<meta property="og:updated_time" content="2017-03-31T09:18:24.000Z">
+viewController的生命周期
+initWithCoder:(NSCoder *)aDecoder：（如果使用storyboard或者xib）
+loadView：加载view
+viewDidLoad：view加载完毕
+viewWillAppear：控制器的view将要显示
+viewWillLayoutSubviews：控制">
+<meta property="og:updated_time" content="2017-03-31T09:20:16.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="控制器的生命周期 | Stago">
 <meta name="twitter:description" content="http://liuzhichao.com/p/1408.html
-viewController的生命周期initWithCoder:(NSCoder )aDecoder：（如果使用storyboard或者xib）loadView：加载view
-viewDidLoad：view加载完毕viewWillAppear：控制器的view将要显示
-viewWillLayoutSubviews：控制器的vi">
+viewController的生命周期
+initWithCoder:(NSCoder *)aDecoder：（如果使用storyboard或者xib）
+loadView：加载view
+viewDidLoad：view加载完毕
+viewWillAppear：控制器的view将要显示
+viewWillLayoutSubviews：控制">
     
     
     
@@ -181,11 +190,17 @@ classes that you can use:
 
   <section id="post-content" class="article-content post">
     <p><a href="http://liuzhichao.com/p/1408.html" target="_blank" rel="external">http://liuzhichao.com/p/1408.html</a></p>
-<h2 id="viewController的生命周期"><a href="#viewController的生命周期" class="headerlink" title="viewController的生命周期"></a>viewController的生命周期</h2><p><em>initWithCoder:(NSCoder </em>)aDecoder：（如果使用storyboard或者xib）<br><em>loadView：加载view
-</em>viewDidLoad：view加载完毕<br><em>viewWillAppear：控制器的view将要显示
-</em>viewWillLayoutSubviews：控制器的view将要布局子控件<br><em>viewDidLayoutSubviews：控制器的view布局子控件完成<br>这期间系统可能会多次调用viewWillLayoutSubviews, viewDidLayoutSubviews 俩个方法
-</em>viewDidAppear:控制器的view完全显示<br><em>viewWillDisappear：控制器的view即将消失的时候<br>这期间系统也会调用viewWillLayoutSubviews 、viewDidLayoutSubviews 两个方法
-</em>viewDidDisappear：控制器的view完全消失的时候</p>
+<h2 id="viewController的生命周期"><a href="#viewController的生命周期" class="headerlink" title="viewController的生命周期"></a>viewController的生命周期</h2><ul>
+<li>initWithCoder:(NSCoder *)aDecoder：（如果使用storyboard或者xib）</li>
+<li>loadView：加载view</li>
+<li>viewDidLoad：view加载完毕</li>
+<li>viewWillAppear：控制器的view将要显示</li>
+<li>viewWillLayoutSubviews：控制器的view将要布局子控件</li>
+<li>viewDidLayoutSubviews：控制器的view布局子控件完成<br>这期间系统可能会多次调用viewWillLayoutSubviews, viewDidLayoutSubviews 俩个方法</li>
+<li>viewDidAppear:控制器的view完全显示</li>
+<li>viewWillDisappear：控制器的view即将消失的时候<br>这期间系统也会调用viewWillLayoutSubviews 、viewDidLayoutSubviews 两个方法</li>
+<li>viewDidDisappear：控制器的view完全消失的时候</li>
+</ul>
 <h2 id="多个viewControllers之间"><a href="#多个viewControllers之间" class="headerlink" title="多个viewControllers之间"></a>多个viewControllers之间</h2>
   </section>
 
