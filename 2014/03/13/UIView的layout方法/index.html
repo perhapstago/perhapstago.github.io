@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      UIView的layout方法 | Stago 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="Shao.">
+    
+    
+
+    <meta name="description" content="layoutSubviews默认没有做任何事情，需要子类进行重写。在以下情况下被调用：
+
+init初始化不会触发layoutSubviews，如果设置了不为CGRectZero的frame的时候会被调用。
+addSubview会触发layoutSubviews。
+设置view的frame的时候会被调用，当然前提是frame的值设置前后发生了变化。
+滚动一个UIScrollView会触发layout">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UIView的layout方法 | Stago">
+<meta property="og:url" content="http://yoursite.com/2014/03/13/UIView的layout方法/index.html">
+<meta property="og:site_name" content="Stago">
+<meta property="og:description" content="layoutSubviews默认没有做任何事情，需要子类进行重写。在以下情况下被调用：
+
+init初始化不会触发layoutSubviews，如果设置了不为CGRectZero的frame的时候会被调用。
+addSubview会触发layoutSubviews。
+设置view的frame的时候会被调用，当然前提是frame的值设置前后发生了变化。
+滚动一个UIScrollView会触发layout">
+<meta property="og:updated_time" content="2017-03-31T09:45:58.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="UIView的layout方法 | Stago">
+<meta name="twitter:description" content="layoutSubviews默认没有做任何事情，需要子类进行重写。在以下情况下被调用：
+
+init初始化不会触发layoutSubviews，如果设置了不为CGRectZero的frame的时候会被调用。
+addSubview会触发layoutSubviews。
+设置view的frame的时候会被调用，当然前提是frame的值设置前后发生了变化。
+滚动一个UIScrollView会触发layout">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">Stago</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">博客</a></li>
+              
+                
+                <li class="navigation__item"><a href="http://www.jianshu.com/u/2abebbde0d3b" title="" class="">简书</a></li>
+              
+                
+                <li class="navigation__item"><a href="http://weibo.com/1657050420/profile?topnav=1&wvr=6" title="" class="">微博</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">UIView的layout方法</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2014-03-13" class="post-meta__date date">2014-03-13</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h2 id="layoutSubviews"><a href="#layoutSubviews" class="headerlink" title="layoutSubviews"></a>layoutSubviews</h2><p>默认没有做任何事情，需要子类进行重写。<br>在以下情况下被调用：</p>
+<ul>
+<li>init初始化不会触发layoutSubviews，如果设置了不为CGRectZero的frame的时候会被调用。</li>
+<li>addSubview会触发layoutSubviews。</li>
+<li>设置view的frame的时候会被调用，当然前提是frame的值设置前后发生了变化。</li>
+<li>滚动一个UIScrollView会触发layoutSubviews事件。</li>
+<li>旋转Screen会触发父UIView上layoutSubviews。</li>
+<li>改变一个UIView大小的时候也会触发父UIView上的layoutSubviews事件。</li>
+<li>直接调用setLayoutSubviews。</li>
+</ul>
+<h2 id="setNeedsLayout"><a href="#setNeedsLayout" class="headerlink" title="setNeedsLayout"></a>setNeedsLayout</h2><p>标记为需要重新布局，不立即刷新，但是layoutSubviews在合适的时机一定会被调用。</p>
+<h2 id="layoutIfNeeded"><a href="#layoutIfNeeded" class="headerlink" title="layoutIfNeeded"></a>layoutIfNeeded</h2><p>如果有layoutIfNeeded标记的刷新，立即调用layoutSubviews进行重新布局。</p>
+<p>对于一组动画而言，不管有多少约束改变，只需在动画里执行一次layoutIfNeeded，所有的都会以动画的方式。如果一些变化不想动画，在动画之前执行layoutIfNeeded。</p>
+<h2 id="drawRect"><a href="#drawRect" class="headerlink" title="drawRect"></a>drawRect</h2><p>这个方法用来重绘。<br>以下情况下会被调用：</p>
+<ul>
+<li>如果在UIView初始化时没有设置rect大小，将直接导致drawRect不被自动调用。drawRect调用是在controller－&gt;loadView，controller-&gt;viewDidLoad两个方法之后调用的，所以不用担心在控制器中，这些view的drawRect就开始画了。这样可以在控制器中设置一些值给view（如果这些view在draw的时候需要用到某些变量值）。</li>
+<li>该方法在sizeToFit后被调用，所以可以先调用sizeToFit计算出size，然后系统自动调用draRect方法。</li>
+<li>通过设置contentMode属性值为UIViewConentModeReDraw。那么将在每次设置或者更改frame的时候会自动调用drawRect方法。</li>
+<li>直接调用setNeedsDisplay，活着setNeedsDisplayInRect：触发drawRect方法，但是前提条件是rect不能为0 。<br>以上1，2推荐，3，4不推荐。</li>
+</ul>
+<p>使用注意点：</p>
+<ul>
+<li>若使用UIView绘图，只能在drawRect方法中获取相应的contextRef并绘图。如果在其他方法中获取将获取到一个invalidate的ref并且不能够用于绘图。drawRect不能手动显示调用，必须通过调用setNeedsDisplay或者setNeedsDisplayInRect让系统自动调用该方法。</li>
+<li>若使用calayer绘图，只能在drawInContext中（类似于drawRect）绘制，或者在delegate中的相应方法绘制，同样也是调用setNeedDisplay等间接调用以上方法。</li>
+<li>若要实时画图，不能使用gestureRecognizer，只能使用touchbegan等方法来调用setNeedsDisplay实时刷新屏幕。</li>
+</ul>
+<h2 id="sizeToFit"><a href="#sizeToFit" class="headerlink" title="sizeToFit"></a>sizeToFit</h2><ul>
+<li>sizeToFit会自动调用sizeThatFits方法。</li>
+<li>sizeToFit不应该在子类中被重写，应该重写sizeThatFits</li>
+<li>sizeThatFits传入的参数是receiver当前的size，返回一个适合的size。</li>
+<li>sizeToFit可以被手动调用直接调用，sizeToFit和sizeThatFits方法都没有递归，对subviews也不负责，只负责自己。</li>
+</ul>
+<h2 id="补充："><a href="#补充：" class="headerlink" title="补充："></a>补充：</h2><ul>
+<li>layoutSubviews对subviews重新布局</li>
+<li>layoutSubviews方法调用优先于drawRect</li>
+<li>setNeedsLayout在receiver标记上一个需要重新布局的标记，在系统runloop的下一个周期自动调用layoutSubviews</li>
+<li>layoutIfNeeded方法如其名，UIKit会判断该receiver是否需要layout。</li>
+<li>layoutIfNeeded遍历的不是superviews链，而是subviews链。</li>
+<li>drawRect是对receiver的重绘，能获得context</li>
+<li>setNeedsDisplay在receiver 上标上一个需要被重新绘制的标记，在写一个draw周期自动绘制。iPhone device的刷新频率是60z，也就是1/60s后重新绘制。</li>
+<li>UIView的setNeedsDisplay和setNeedsLayout方法区别：首先，这两个方法都是异步调用的。其次，setNeedsDisplay会自动调用drawRect方法，这样可以拿到UIGraphicsGetCurrentContext，就可以画画了。setNeedsLayout会默认调用layoutSubViews，这样就可以处理视图。综上所述，setNeedsDisplay方便绘图，setNeedsLayout方便出数据。 </li>
+</ul>
+
+  </section>
+
+  
+  
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; | <a href="http://perhapsdone@163.com">Stago</a> | never lose my passion.
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
