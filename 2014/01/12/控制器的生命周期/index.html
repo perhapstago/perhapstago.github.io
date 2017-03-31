@@ -34,7 +34,7 @@ loadView：加载view
 viewDidLoad：view加载完毕
 viewWillAppear：控制器的view将要显示
 viewWillLayoutSubviews：控制">
-<meta property="og:updated_time" content="2017-03-31T09:20:16.000Z">
+<meta property="og:updated_time" content="2017-03-31T09:23:35.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="控制器的生命周期 | Stago">
 <meta name="twitter:description" content="http://liuzhichao.com/p/1408.html
@@ -201,7 +201,30 @@ classes that you can use:
 <li>viewWillDisappear：控制器的view即将消失的时候<br>这期间系统也会调用viewWillLayoutSubviews 、viewDidLayoutSubviews 两个方法</li>
 <li>viewDidDisappear：控制器的view完全消失的时候</li>
 </ul>
-<h2 id="多个viewControllers之间"><a href="#多个viewControllers之间" class="headerlink" title="多个viewControllers之间"></a>多个viewControllers之间</h2>
+<h2 id="多个viewControllers之间"><a href="#多个viewControllers之间" class="headerlink" title="多个viewControllers之间"></a>多个viewControllers之间</h2><p>ViewController1 push ViewController2:</p>
+<ul>
+<li>initWithCoder:(NSCoder *)aDecoder：ViewController2 (如果用xib创建的情况下）</li>
+<li>loadView：ViewController2</li>
+<li>viewDidLoad：ViewController2</li>
+<li>viewWillDisappear：ViewController1 将要消失</li>
+<li>viewWillAppear：ViewController2 将要出现</li>
+<li>viewWillLayoutSubviews ViewController2</li>
+<li>viewDidLayoutSubviews ViewController2</li>
+<li>viewWillLayoutSubviews:ViewController1</li>
+<li>viewDidLayoutSubviews:ViewController1</li>
+<li>viewDidDisappear:ViewController1 完全消失</li>
+<li>viewDidAppear:ViewController2 完全出现</li>
+</ul>
+<p>非ARC环境</p>
+<ul>
+<li><p>didReceiveMemoryWarning：<br>当app收到内存警告的时候会发消息给视图控制器。<br>app从来不会直接调用这个方法，而是当系统确定可用内存不足的时候采取调用。<br>如果你想覆写这个方法来释放一些控制器使用的额外内存，你应该在你的实现方法中调用父类的实现方法。</p>
+</li>
+<li><p>viewWillUnload：（iOS6废除）<br>当消除掉控制器的视图之前调用<br>视图不会再在低内存条件下被清除所以这个方法不会再被调用。<br>在iOS5之前，当低的内存情况发生的时候，当前控制器的视图们不再被需要的时候，系统会有选择性的将这些视图从这些内存移除。这个方法被调用的目的是在视图被真正的销毁前你可以执行一些清空的任务。比如，你想要使用这个方法去清空视图的观察者或通知或者记录视图的状态以便当重新读取的时候恢复。<br>在iOS6之后，不再需要清空视图的引用。因此，其他一些关于清理的方法，比如清空观察者，也不是必要的了。</p>
+</li>
+<li><p>viewDidUnload：（iOS6废除）<br>当视图从内存中被消除后调用<br>视图在地的内存情况下不再被销毁所以这个方法也不再会调用<br>在iOS5之前，地的内存状况发生之后，当前的试图控制器的视图不再被需要，系统会选择性的在视图控制器的视图被销毁后调用。这个方法使你执行一些最后清空任务的最后机会如果你的视图控制器存储着对视图的或子控件的单独引用，你应该使用这个方法去释放这些引用。你也可以使用这个方法去消除一些你再创建视图时候所创建的但是当视图不再的时候不再需要的关于对象的引用。你不应该使用这个方法去释放用户数据或者一些不能轻易被重新创建的数据。<br>在iOS6之后，清空在试图控制器中对views和其他对象的引用已经没有必要了。<br>当这个方法被调用的时候，视图的属性是空的。</p>
+</li>
+</ul>
+
   </section>
 
   
