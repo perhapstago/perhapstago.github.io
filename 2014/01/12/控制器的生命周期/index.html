@@ -34,7 +34,7 @@ loadView：加载view
 viewDidLoad：view加载完毕
 viewWillAppear：控制器的view将要显示
 viewWillLayoutSubviews：控制">
-<meta property="og:updated_time" content="2017-03-31T09:23:35.000Z">
+<meta property="og:updated_time" content="2017-03-31T09:28:06.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="控制器的生命周期 | Stago">
 <meta name="twitter:description" content="http://liuzhichao.com/p/1408.html
@@ -215,8 +215,7 @@ classes that you can use:
 <li>viewDidDisappear:ViewController1 完全消失</li>
 <li>viewDidAppear:ViewController2 完全出现</li>
 </ul>
-<p>非ARC环境</p>
-<ul>
+<h2 id="非ARC环境"><a href="#非ARC环境" class="headerlink" title="非ARC环境"></a>非ARC环境</h2><ul>
 <li><p>didReceiveMemoryWarning：<br>当app收到内存警告的时候会发消息给视图控制器。<br>app从来不会直接调用这个方法，而是当系统确定可用内存不足的时候采取调用。<br>如果你想覆写这个方法来释放一些控制器使用的额外内存，你应该在你的实现方法中调用父类的实现方法。</p>
 </li>
 <li><p>viewWillUnload：（iOS6废除）<br>当消除掉控制器的视图之前调用<br>视图不会再在低内存条件下被清除所以这个方法不会再被调用。<br>在iOS5之前，当低的内存情况发生的时候，当前控制器的视图们不再被需要的时候，系统会有选择性的将这些视图从这些内存移除。这个方法被调用的目的是在视图被真正的销毁前你可以执行一些清空的任务。比如，你想要使用这个方法去清空视图的观察者或通知或者记录视图的状态以便当重新读取的时候恢复。<br>在iOS6之后，不再需要清空视图的引用。因此，其他一些关于清理的方法，比如清空观察者，也不是必要的了。</p>
