@@ -7,7 +7,7 @@
     
 
     <title>
-      page 5 | Archives: 2013/7 | Stago 
+      alloc 与 init | Stago 
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,12 +16,22 @@
     
     
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="page 5 | Archives: 2013/7 | Stago">
-<meta property="og:url" content="http://yoursite.com/archives/2013/07/page/5/index.html">
+    <meta name="description" content="alloc：分配内存init：初始化new：分配内存，并且初始化
+iOS里的内存分为Clean Memory和Dirty Memory。Clean Memory可以被操作系统回收，Dirty Memory不可被操作系统回收。
+-Clean Memory:在闪存中有备份，能再次读取重建。如：Code(代码段)，framework，memory-mapped files-Dirty Memory:所有">
+<meta property="og:type" content="article">
+<meta property="og:title" content="alloc 与 init | Stago">
+<meta property="og:url" content="http://yoursite.com/2013/11/22/alloc 与 init/index.html">
 <meta property="og:site_name" content="Stago">
+<meta property="og:description" content="alloc：分配内存init：初始化new：分配内存，并且初始化
+iOS里的内存分为Clean Memory和Dirty Memory。Clean Memory可以被操作系统回收，Dirty Memory不可被操作系统回收。
+-Clean Memory:在闪存中有备份，能再次读取重建。如：Code(代码段)，framework，memory-mapped files-Dirty Memory:所有">
+<meta property="og:updated_time" content="2017-03-31T08:40:42.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="page 5 | Archives: 2013/7 | Stago">
+<meta name="twitter:title" content="alloc 与 init | Stago">
+<meta name="twitter:description" content="alloc：分配内存init：初始化new：分配内存，并且初始化
+iOS里的内存分为Clean Memory和Dirty Memory。Clean Memory可以被操作系统回收，Dirty Memory不可被操作系统回收。
+-Clean Memory:在闪存中有备份，能再次读取重建。如：Code(代码段)，framework，memory-mapped files-Dirty Memory:所有">
     
     
     
@@ -142,87 +152,43 @@ classes that you can use:
         <div class="content-wrapper__inner entry">
             
 
+<article class="post-container post-container--single">
 
-  <h1 class="archive-title">Archives: 2013/7</h1>
-  <hr class="post-list__divider" />
-
-
-<div class="main-post-list">
-    <ol class="post-list">
+  <header class="post-header">
     
-    
-    <li>
+    <h1 class="post-title">alloc 与 init</h1>
 
-      <h2 class="post-list__post-title post-title">
-        <a href="/2013/07/13/让编译器对一些警告闭嘴/" title="link to 让编译器对一些警告闭嘴">让编译器对一些警告闭嘴</a>
-      </h2>
-
-      <div class="post-list__meta">
-
-        <time datetime="2013-07-13" class="post-list__meta--date date">2013-07-13</time> 
-      </div>
-
-      <div class="excerpt">
-        
-      </div>
-
-      <hr class="post-list__divider" />
-    </li>
-    
-    <li>
-
-      <h2 class="post-list__post-title post-title">
-        <a href="/2013/07/13/隐式动画/" title="link to 隐式动画">隐式动画</a>
-      </h2>
-
-      <div class="post-list__meta">
-
-        <time datetime="2013-07-13" class="post-list__meta--date date">2013-07-13</time> 
-      </div>
-
-      <div class="excerpt">
-        
-      </div>
-
-      <hr class="post-list__divider" />
-    </li>
-    
-    <li>
-
-      <h2 class="post-list__post-title post-title">
-        <a href="/2013/07/13/集成环信的步骤/" title="link to 集成环信的步骤">集成环信的步骤</a>
-      </h2>
-
-      <div class="post-list__meta">
-
-        <time datetime="2013-07-13" class="post-list__meta--date date">2013-07-13</time> 
-      </div>
-
-      <div class="excerpt">
-        
-      </div>
-
-      <hr class="post-list__divider" />
-    </li>
-    
-  </ol>
-
-  <hr class="post-list__divider " />
-
-<nav class="pagination" role="navigation">
-    
-    	
-          <a class="newer-posts pagination__newer btn btn-small btn-tertiary" href="/archives/2013/07/page/4/">&larr; Prev </a>
-        
     
 
-    <span class="pagination__page-number"> 5 / 5</span>
+    <div class="post-meta">
+      <time datetime="2013-11-22" class="post-meta__date date">2013-11-22</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
     
     
-</nav>
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <p>alloc：分配内存<br>init：初始化<br>new：分配内存，并且初始化</p>
+<p>iOS里的内存分为Clean Memory和Dirty Memory。<br>Clean Memory可以被操作系统回收，Dirty Memory不可被操作系统回收。</p>
+<p>-Clean Memory:在闪存中有备份，能再次读取重建。如：Code(代码段)，framework，memory-mapped files<br>-Dirty Memory:所有非Clean Memory，如：被分配了的堆空间，image cache</p>
+<p>alloc分配的内存是直接映射到堆还是只分配给了虚拟内存？这一坨内存到底是多大？<br>update: <a href="http://www.cocoachina.com/ios/20160627/16823.html" target="_blank" rel="external">http://www.cocoachina.com/ios/20160627/16823.html</a></p>
+
+  </section>
+
+  
+  
+</article>
 
 
-</div>
             <footer class="footer">
 
     <span class="footer__copyright">&copy; | <a href="http://perhapsdone@163.com">Stago</a> | never lose my passion.
@@ -251,6 +217,18 @@ classes that you can use:
 
 
     
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
     
     
     <!--kill ie6 -->
