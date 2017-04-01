@@ -16,19 +16,19 @@
     
     
 
-    <meta name="description" content="Quick StartCreate a new postinitWithCode :是一个类在IB中创建但在Xcode中被实例化时被调用的.比如,通过XIB创建一个controller的nib文件,然后在xocde中通过initWithNibName来实例化这个controller,那么这个controller的initWithCoder会被调用。
-awakaFromNib :在使用XIB的时候才">
+    <meta name="description" content="initWithCode :是一个类在IB中创建但在Xcode中被实例化时被调用的.比如,通过XIB创建一个controller的nib文件,然后在xocde中通过initWithNibName来实例化这个controller,那么这个controller的initWithCoder会被调用。
+awakaFromNib :在使用XIB的时候才会涉及到此方法的使用，当.nib文件被加载的时候，会发送">
 <meta property="og:type" content="article">
 <meta property="og:title" content="三个分不太清楚 | Stago">
 <meta property="og:url" content="http://yoursite.com/2016/03/01/三个分不太清楚/index.html">
 <meta property="og:site_name" content="Stago">
-<meta property="og:description" content="Quick StartCreate a new postinitWithCode :是一个类在IB中创建但在Xcode中被实例化时被调用的.比如,通过XIB创建一个controller的nib文件,然后在xocde中通过initWithNibName来实例化这个controller,那么这个controller的initWithCoder会被调用。
-awakaFromNib :在使用XIB的时候才">
-<meta property="og:updated_time" content="2017-04-01T06:31:15.000Z">
+<meta property="og:description" content="initWithCode :是一个类在IB中创建但在Xcode中被实例化时被调用的.比如,通过XIB创建一个controller的nib文件,然后在xocde中通过initWithNibName来实例化这个controller,那么这个controller的initWithCoder会被调用。
+awakaFromNib :在使用XIB的时候才会涉及到此方法的使用，当.nib文件被加载的时候，会发送">
+<meta property="og:updated_time" content="2017-04-01T08:43:19.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="三个分不太清楚 | Stago">
-<meta name="twitter:description" content="Quick StartCreate a new postinitWithCode :是一个类在IB中创建但在Xcode中被实例化时被调用的.比如,通过XIB创建一个controller的nib文件,然后在xocde中通过initWithNibName来实例化这个controller,那么这个controller的initWithCoder会被调用。
-awakaFromNib :在使用XIB的时候才">
+<meta name="twitter:description" content="initWithCode :是一个类在IB中创建但在Xcode中被实例化时被调用的.比如,通过XIB创建一个controller的nib文件,然后在xocde中通过initWithNibName来实例化这个controller,那么这个controller的initWithCoder会被调用。
+awakaFromNib :在使用XIB的时候才会涉及到此方法的使用，当.nib文件被加载的时候，会发送">
     
     
     
@@ -174,7 +174,7 @@ classes that you can use:
   </header>
 
   <section id="post-content" class="article-content post">
-    <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><p>initWithCode :<br>是一个类在IB中创建但在Xcode中被实例化时被调用的.比如,通过XIB创建一个controller的nib文件,然后在xocde中通过initWithNibName来实例化这个controller,那么这个controller的initWithCoder会被调用。</p>
+    <p>initWithCode :<br>是一个类在IB中创建但在Xcode中被实例化时被调用的.比如,通过XIB创建一个controller的nib文件,然后在xocde中通过initWithNibName来实例化这个controller,那么这个controller的initWithCoder会被调用。</p>
 <p>awakaFromNib :<br>在使用XIB的时候才会涉及到此方法的使用，当.nib文件被加载的时候，会发送一个awakeFromNib的消息到.nib文件中的每个对象，每个对象都可以定义自己的awakeFromNib函数来响应这个消息，执行一些必要的操作。</p>
 <p>initWithNibName :<br>一般情况下调用 init方法或者调用initWithNibName方法实例化UIViewController, 不管调用哪个方法最终都会调用initWithNibName方法。<br>当 控制器被initWithNibName:并加入到导航控制器的栈中时，它不会加载nib文件，直到nib文件被实际显示。因此控制器在nib文件中定 义的内容，例如label，可能还没有实例化。此时label可能只是一个nil指针，需要额外使用代码中实现的属性来存储信息。可以在 viewWillAppear：方法中对niv实例化的对象属性进行设置。 </p>
 
