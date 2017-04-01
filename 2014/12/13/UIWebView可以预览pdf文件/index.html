@@ -7,7 +7,7 @@
     
 
     <title>
-      Archives: 2014 
+      预览pdf文件 | Stago 
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,12 +16,34 @@
     
     
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Archives: 2014">
-<meta property="og:url" content="http://yoursite.com/archives/2014/index.html">
+    <meta name="description" content="三种方式:
+
+UIWebView:[self.webView loadRequst:request];
+
+CLPreviewController:要实现一个委托：QLPreviewControllerDataSource还提供了在iphone中打印文档的功能
+
+绘制pdf文档:apple有个官方的例子是绘制pdf的。这种方式可以很方便的控制pdf的展现细节，但是效率不高">
+<meta property="og:type" content="article">
+<meta property="og:title" content="预览pdf文件 | Stago">
+<meta property="og:url" content="http://yoursite.com/2014/12/13/UIWebView可以预览pdf文件/index.html">
 <meta property="og:site_name" content="Stago">
+<meta property="og:description" content="三种方式:
+
+UIWebView:[self.webView loadRequst:request];
+
+CLPreviewController:要实现一个委托：QLPreviewControllerDataSource还提供了在iphone中打印文档的功能
+
+绘制pdf文档:apple有个官方的例子是绘制pdf的。这种方式可以很方便的控制pdf的展现细节，但是效率不高">
+<meta property="og:updated_time" content="2017-04-01T02:12:51.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Archives: 2014">
+<meta name="twitter:title" content="预览pdf文件 | Stago">
+<meta name="twitter:description" content="三种方式:
+
+UIWebView:[self.webView loadRequst:request];
+
+CLPreviewController:要实现一个委托：QLPreviewControllerDataSource还提供了在iphone中打印文档的功能
+
+绘制pdf文档:apple有个官方的例子是绘制pdf的。这种方式可以很方便的控制pdf的展现细节，但是效率不高">
     
     
     
@@ -142,119 +164,48 @@ classes that you can use:
         <div class="content-wrapper__inner entry">
             
 
+<article class="post-container post-container--single">
 
-  <h1 class="archive-title">Archives: 2014</h1>
-  <hr class="post-list__divider" />
-
-
-<div class="main-post-list">
-    <ol class="post-list">
+  <header class="post-header">
     
-    
-    <li>
+    <h1 class="post-title">预览pdf文件</h1>
 
-      <h2 class="post-list__post-title post-title">
-        <a href="/2014/12/13/UIWebView可以预览pdf文件/" title="link to 预览pdf文件">预览pdf文件</a>
-      </h2>
-
-      <div class="post-list__meta">
-
-        <time datetime="2014-12-13" class="post-list__meta--date date">2014-12-13</time> 
-      </div>
-
-      <div class="excerpt">
-        
-      </div>
-
-      <hr class="post-list__divider" />
-    </li>
-    
-    <li>
-
-      <h2 class="post-list__post-title post-title">
-        <a href="/2014/11/18/iOS程序中的内存分配/" title="link to iOS中的内存分配">iOS中的内存分配</a>
-      </h2>
-
-      <div class="post-list__meta">
-
-        <time datetime="2014-11-18" class="post-list__meta--date date">2014-11-18</time> 
-      </div>
-
-      <div class="excerpt">
-        
-      </div>
-
-      <hr class="post-list__divider" />
-    </li>
-    
-    <li>
-
-      <h2 class="post-list__post-title post-title">
-        <a href="/2014/04/27/XMPP框架导入/" title="link to XMPP框架导入">XMPP框架导入</a>
-      </h2>
-
-      <div class="post-list__meta">
-
-        <time datetime="2014-04-27" class="post-list__meta--date date">2014-04-27</time> 
-      </div>
-
-      <div class="excerpt">
-        
-      </div>
-
-      <hr class="post-list__divider" />
-    </li>
-    
-    <li>
-
-      <h2 class="post-list__post-title post-title">
-        <a href="/2014/03/13/UIView的layout方法/" title="link to UIView的layout方法">UIView的layout方法</a>
-      </h2>
-
-      <div class="post-list__meta">
-
-        <time datetime="2014-03-13" class="post-list__meta--date date">2014-03-13</time> 
-      </div>
-
-      <div class="excerpt">
-        
-      </div>
-
-      <hr class="post-list__divider" />
-    </li>
-    
-    <li>
-
-      <h2 class="post-list__post-title post-title">
-        <a href="/2014/01/12/控制器的生命周期/" title="link to 控制器的生命周期">控制器的生命周期</a>
-      </h2>
-
-      <div class="post-list__meta">
-
-        <time datetime="2014-01-12" class="post-list__meta--date date">2014-01-12</time> 
-      </div>
-
-      <div class="excerpt">
-        
-      </div>
-
-      <hr class="post-list__divider" />
-    </li>
-    
-  </ol>
-
-  <hr class="post-list__divider " />
-
-<nav class="pagination" role="navigation">
     
 
-    <span class="pagination__page-number"> 1 / 1</span>
+    <div class="post-meta">
+      <time datetime="2014-12-13" class="post-meta__date date">2014-12-13</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
     
     
-</nav>
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <p>三种方式:</p>
+<ul>
+<li><p>UIWebView:<br>[self.webView loadRequst:request];</p>
+</li>
+<li><p>CLPreviewController:<br>要实现一个委托：QLPreviewControllerDataSource<br>还提供了在iphone中打印文档的功能</p>
+</li>
+<li><p>绘制pdf文档:<br>apple有个官方的例子是绘制pdf的。<br>这种方式可以很方便的控制pdf的展现细节，但是效率不高</p>
+</li>
+</ul>
+
+  </section>
+
+  
+  
+</article>
 
 
-</div>
             <footer class="footer">
 
     <span class="footer__copyright">&copy; | <a href="http://perhapsdone@163.com">Stago</a> | never lose my passion.
@@ -283,6 +234,18 @@ classes that you can use:
 
 
     
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
     
     
     <!--kill ie6 -->
