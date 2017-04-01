@@ -24,7 +24,7 @@
 <meta property="og:site_name" content="Stago">
 <meta property="og:description" content="http://blog.csdn.net/mamong/article/details/24542107http://www.zgxue.com/167/1674983.html
 1.方法弃用告警123456#pragma clang diagnostic push  #pragma clang diagnostic ignored &amp;quot;-Wdeprecated-declarations&amp;">
-<meta property="og:updated_time" content="2017-04-01T02:19:31.000Z">
+<meta property="og:updated_time" content="2017-04-01T02:20:27.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="让编译器对一些警告闭嘴 | Stago">
 <meta name="twitter:description" content="http://blog.csdn.net/mamong/article/details/24542107http://www.zgxue.com/167/1674983.html
@@ -176,9 +176,9 @@ classes that you can use:
   <section id="post-content" class="article-content post">
     <p><a href="http://blog.csdn.net/mamong/article/details/24542107" target="_blank" rel="external">http://blog.csdn.net/mamong/article/details/24542107</a><br><a href="http://www.zgxue.com/167/1674983.html" target="_blank" rel="external">http://www.zgxue.com/167/1674983.html</a></p>
 <p>1.方法弃用告警<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#pragma clang diagnostic push  </div><div class="line"></div><div class="line">#pragma clang diagnostic ignored &quot;-Wdeprecated-declarations&quot;       </div><div class="line">[TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];  </div><div class="line"></div><div class="line">#pragma clang diagnostic pop</div></pre></td></tr></table></figure></p>
-<p>2.不兼容指针类型</p>
-<p>3.retain cycle</p>
-<p>4.未使用变量</p>
+<p>2.不兼容指针类型<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">#pragma clang diagnostic push   </div><div class="line">#pragma clang diagnostic ignored &quot;-Wincompatible-pointer-types&quot;   </div><div class="line">//  </div><div class="line">#pragma clang diagnostic pop</div></pre></td></tr></table></figure></p>
+<p>3.retain cycle<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">// completionBlock is manually nilled out in AFURLConnectionOperation to break the retain cycle.  </div><div class="line">#pragma clang diagnostic push  </div><div class="line">#pragma clang diagnostic ignored &quot;-Warc-retain-cycles&quot;  </div><div class="line">self.completionBlock = ^ &#123;  </div><div class="line">...  </div><div class="line">&#125;;  </div><div class="line">#pragma clang diagnostic pop</div></pre></td></tr></table></figure></p>
+<p>4.未使用变量<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">派生到我的代码片</div><div class="line"></div><div class="line">#pragma clang diagnostic push   </div><div class="line">#pragma clang diagnostic ignored &quot;-Wunused-variable&quot;   </div><div class="line"></div><div class="line">int a;   </div><div class="line"></div><div class="line">#pragma clang diagnostic pop</div></pre></td></tr></table></figure></p>
 
   </section>
 
