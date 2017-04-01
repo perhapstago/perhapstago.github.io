@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      NSTimer Runloop | Stago 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="Shao.">
+    
+    
+
+    <meta name="description" content="iOS中所有消息都会被添加到NSRunloop中，分为‘input source’跟’timer source’种，并在循环中检查是不是有事件需要发生，如果需要那么就调用相应的函数处理使用NSTimer的时候，可能会接触到runloop的概念
+12345678910- (void)viewDidLoad&amp;#123;[super viewDidLoad];// Do any additional s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NSTimer Runloop | Stago">
+<meta property="og:url" content="http://yoursite.com/2014/11/23/NSTimer Runloop/index.html">
+<meta property="og:site_name" content="Stago">
+<meta property="og:description" content="iOS中所有消息都会被添加到NSRunloop中，分为‘input source’跟’timer source’种，并在循环中检查是不是有事件需要发生，如果需要那么就调用相应的函数处理使用NSTimer的时候，可能会接触到runloop的概念
+12345678910- (void)viewDidLoad&amp;#123;[super viewDidLoad];// Do any additional s">
+<meta property="og:updated_time" content="2017-04-01T07:53:03.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="NSTimer Runloop | Stago">
+<meta name="twitter:description" content="iOS中所有消息都会被添加到NSRunloop中，分为‘input source’跟’timer source’种，并在循环中检查是不是有事件需要发生，如果需要那么就调用相应的函数处理使用NSTimer的时候，可能会接触到runloop的概念
+12345678910- (void)viewDidLoad&amp;#123;[super viewDidLoad];// Do any additional s">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">Stago</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">博客</a></li>
+              
+                
+                <li class="navigation__item"><a href="http://www.jianshu.com/u/2abebbde0d3b" title="" class="">简书</a></li>
+              
+                
+                <li class="navigation__item"><a href="http://weibo.com/1657050420/profile?topnav=1&wvr=6" title="" class="">微博</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">NSTimer Runloop</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2014-11-23" class="post-meta__date date">2014-11-23</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <p>iOS中所有消息都会被添加到NSRunloop中，分为‘input source’跟’timer source’种，并在循环中检查是不是有事件需要发生，如果需要那么就调用相应的函数处理<br>使用NSTimer的时候，可能会接触到runloop的概念</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">- (void)viewDidLoad</div><div class="line">&#123;</div><div class="line">[super viewDidLoad];</div><div class="line">// Do any additional setup after loading the view, typically from a nib.</div><div class="line">NSTimer * timer = [NSTimer scheduledTimerWithTimeInterval:1</div><div class="line">target:self</div><div class="line">selector:@selector(printMessage:)</div><div class="line">userInfo:nil</div><div class="line">repeats:YES];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>这个时候如果我们在界面上滚动一个scrollview，那么我们会发现在停止滚动前，控制台不会有任何输出，就好像scrollView在滚动的时候将timer暂停了一样，在查看相应文档后发现，这其实就是runloop的mode在做怪。<br>runloop可以理解为cocoa下的一种消息循环机制，用来处理各种消息事件，我们在开发的时候并不需要手动去创建一个runloop，因为框架为我们创建了一个默认的runloop,通过[NSRunloop currentRunloop]我们可以得到一个当前线程下面对应的runloop对象，不过我们需要注意的是不同的runloop之间消息的通知方式。</p>
+<p>接着上面的话题，在开启一个NSTimer实质上是在当前的runloop中注册了一个新的事件源，而当scrollView滚动的时候，当前的MainRunLoop是处于UITrackingRunLoopMode的模式下，在这个模式下，是不会处理NSDefaultRunLoopMode的消息(因为RunLoop Mode不一样)，要想在scrollView滚动的同时也接受其它runloop的消息，我们需要改变两者之间的runloopmode.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line">[[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];</div></pre></td></tr></table></figure></p>
+<p>简单的说就是NSTimer不会开启新的进程，只是在Runloop里注册了一下，Runloop每次loop时都会检测这个timer，看是否可以触发。当Runloop在A mode，而timer注册在B mode时就无法去检测这个timer，所以需要把NSTimer也注册到A mode，这样就可以被检测到。</p>
+<p>说到这里，在http异步通信的模块中也有可能碰到这样的问题，就是在向服务器异步获取图片数据通知主线程刷新tableView中的图片时，在tableView滚动没有停止或用户手指停留在屏幕上的时候，图片一直不会出来，可能背后也是这个runloop的mode在做怪</p>
+
+  </section>
+
+  
+  
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; | <a href="http://perhapsdone@163.com">Stago</a> | never lose my passion.
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
