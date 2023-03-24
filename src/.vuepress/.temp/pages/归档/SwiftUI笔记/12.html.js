@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-229d30b8\",\"path\":\"/%E5%BD%92%E6%A1%A3/SwiftUI%E7%AC%94%E8%AE%B0/12.html\",\"title\":\"12.导航视图\",\"lang\":\"zh-CN\",\"frontmatter\":{\"date\":\"2022-01-08T00:00:00.000Z\",\"category\":[\"苹果\",\"水果\"],\"tag\":[\"红\",\"大\"],\"description\":\"12.导航视图 导航视图是 SwiftUI 中非常重要的一个组件，它可以用于管理应用程序中的多个视图。 导航视图的基础 在 SwiftUI 中，导航视图可以通过 NavigationView 和 NavigationLink 两个组件来实现。其中，NavigationView 用于包含和管理多个视图，而 NavigationLink 用于在不同的视图之间进行切换。 NavigationView NavigationView 是一个容器视图，它可以包含多个视图，并将这些视图按照导航栏和工具栏的形式进行显示。当用户选择导航栏中的某个项目时，NavigationView 会自动将对应的视图进行显示。\"},\"headers\":[{\"level\":2,\"title\":\"导航视图的基础\",\"slug\":\"导航视图的基础\",\"link\":\"#导航视图的基础\",\"children\":[{\"level\":3,\"title\":\"NavigationView\",\"slug\":\"navigationview\",\"link\":\"#navigationview\",\"children\":[]},{\"level\":3,\"title\":\"NavigationLink\",\"slug\":\"navigationlink\",\"link\":\"#navigationlink\",\"children\":[]}]},{\"level\":2,\"title\":\"导航视图的高级用法\",\"slug\":\"导航视图的高级用法\",\"link\":\"#导航视图的高级用法\",\"children\":[]},{\"level\":2,\"title\":\"总结\",\"slug\":\"总结\",\"link\":\"#总结\",\"children\":[]}],\"readingTime\":{\"minutes\":3.47,\"words\":1040},\"filePathRelative\":\"归档/SwiftUI笔记/12.md\",\"localizedDate\":\"2022年1月8日\",\"excerpt\":\"<h1> 12.导航视图</h1>\\n<p>导航视图是 SwiftUI 中非常重要的一个组件，它可以用于管理应用程序中的多个视图。</p>\\n<h2> 导航视图的基础</h2>\\n<p>在 SwiftUI 中，导航视图可以通过 NavigationView 和 NavigationLink 两个组件来实现。其中，NavigationView 用于包含和管理多个视图，而 NavigationLink 用于在不同的视图之间进行切换。</p>\\n<h3> NavigationView</h3>\\n<p>NavigationView 是一个容器视图，它可以包含多个视图，并将这些视图按照导航栏和工具栏的形式进行显示。当用户选择导航栏中的某个项目时，NavigationView 会自动将对应的视图进行显示。<br></p>\",\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

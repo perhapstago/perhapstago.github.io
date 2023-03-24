@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-7c3934b2\",\"path\":\"/%E5%BC%80%E5%8F%91/iPhone%20OS/13.html\",\"title\":\"SDWebImage框架分析\",\"lang\":\"zh-CN\",\"frontmatter\":{\"date\":\"2022-01-01T00:00:00.000Z\",\"category\":[\"苹果\"],\"tag\":[\"红\",\"大\",\"圆\"],\"description\":\"SDWebImage框架分析 SDWebImage是iOS开发中常用的异步图片加载框架，它提供了许多方便的功能，如异步下载图片、图片缓存、图片解压缩、图片处理等。 主要功能 SDWebImage主要有以下几个功能和优势： 异步下载图片：使用NSURLConnection或NSURLSession实现图片的异步下载，避免了在主线程中下载图片导致的UI卡顿和性能下降。 图片缓存：使用NSCache和磁盘缓存实现图片的缓存，避免了重复下载图片和提高了图片加载速度。 图片解压缩：使用libjpeg-turbo和libwebp等库对图片进行解压缩，提高了图片的显示效果和性能。 图片处理：支持图片的裁剪、缩放、圆角、渐进式加载等处理，提供了更丰富的图片展示效果。\"},\"headers\":[{\"level\":2,\"title\":\"主要功能\",\"slug\":\"主要功能\",\"link\":\"#主要功能\",\"children\":[]},{\"level\":2,\"title\":\"实现原理\",\"slug\":\"实现原理\",\"link\":\"#实现原理\",\"children\":[{\"level\":3,\"title\":\"异步下载图片\",\"slug\":\"异步下载图片\",\"link\":\"#异步下载图片\",\"children\":[]},{\"level\":3,\"title\":\"图片缓存\",\"slug\":\"图片缓存\",\"link\":\"#图片缓存\",\"children\":[]},{\"level\":3,\"title\":\"图片解压缩\",\"slug\":\"图片解压缩\",\"link\":\"#图片解压缩\",\"children\":[]},{\"level\":3,\"title\":\"图片处理\",\"slug\":\"图片处理\",\"link\":\"#图片处理\",\"children\":[]}]},{\"level\":2,\"title\":\"代码结构\",\"slug\":\"代码结构\",\"link\":\"#代码结构\",\"children\":[]},{\"level\":2,\"title\":\"使用方法\",\"slug\":\"使用方法\",\"link\":\"#使用方法\",\"children\":[]},{\"level\":2,\"title\":\"总结\",\"slug\":\"总结\",\"link\":\"#总结\",\"children\":[]}],\"readingTime\":{\"minutes\":4.73,\"words\":1420},\"filePathRelative\":\"开发/iPhone OS/13.md\",\"localizedDate\":\"2022年1月1日\",\"excerpt\":\"<h1> SDWebImage框架分析</h1>\\n<p>SDWebImage是iOS开发中常用的异步图片加载框架，它提供了许多方便的功能，如异步下载图片、图片缓存、图片解压缩、图片处理等。</p>\\n<h2> 主要功能</h2>\\n<p>SDWebImage主要有以下几个功能和优势：</p>\\n<ul>\\n<li>异步下载图片：使用NSURLConnection或NSURLSession实现图片的异步下载，避免了在主线程中下载图片导致的UI卡顿和性能下降。</li>\\n<li>图片缓存：使用NSCache和磁盘缓存实现图片的缓存，避免了重复下载图片和提高了图片加载速度。</li>\\n<li>图片解压缩：使用libjpeg-turbo和libwebp等库对图片进行解压缩，提高了图片的显示效果和性能。</li>\\n<li>图片处理：支持图片的裁剪、缩放、圆角、渐进式加载等处理，提供了更丰富的图片展示效果。</li>\\n</ul>\",\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

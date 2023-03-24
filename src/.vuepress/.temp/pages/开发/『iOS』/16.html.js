@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-10becd74\",\"path\":\"/%E5%BC%80%E5%8F%91/%E3%80%8EiOS%E3%80%8F/16.html\",\"title\":\"三个方法区分\",\"lang\":\"zh-CN\",\"frontmatter\":{\"date\":\"2020-1-19\",\"description\":\"三个方法区分 initWithCode、awakaFromNib、initWithNibName 这三个方法都是用于创建 UIViewController 的初始化方法： initWithCoder: 这是一个 NSCoding 协议中定义的方法，用于从归档数据中解码并初始化对象。在使用 Interface Builder 设计 UI 界面时，会将 UIViewController 对象编码为归档数据，并在运行时进行解码初始化。因此，当我们使用 Interface Builder 设计 UI 界面时，通常会使用这个方法来初始化 UIViewController 对象。\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"http://yunpu.tech/%E5%BC%80%E5%8F%91/%E3%80%8EiOS%E3%80%8F/16.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"夏日的瓜牛\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"三个方法区分\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"三个方法区分 initWithCode、awakaFromNib、initWithNibName 这三个方法都是用于创建 UIViewController 的初始化方法： initWithCoder: 这是一个 NSCoding 协议中定义的方法，用于从归档数据中解码并初始化对象。在使用 Interface Builder 设计 UI 界面时，会将 UIViewController 对象编码为归档数据，并在运行时进行解码初始化。因此，当我们使用 Interface Builder 设计 UI 界面时，通常会使用这个方法来初始化 UIViewController 对象。\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:published_time\",\"content\":\"2020-01-18T16:00:00.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"三个方法区分\\\",\\\"image\\\":[\\\"\\\"],\\\"datePublished\\\":\\\"2020-01-18T16:00:00.000Z\\\",\\\"dateModified\\\":null,\\\"author\\\":[]}\"]]},\"headers\":[{\"level\":2,\"title\":\"initWithCoder:\",\"slug\":\"initwithcoder\",\"link\":\"#initwithcoder\",\"children\":[]},{\"level\":2,\"title\":\"awakeFromNib\",\"slug\":\"awakefromnib\",\"link\":\"#awakefromnib\",\"children\":[]},{\"level\":2,\"title\":\"initWithNibName:bundle:\",\"slug\":\"initwithnibname-bundle\",\"link\":\"#initwithnibname-bundle\",\"children\":[]},{\"level\":2,\"title\":\"区别\",\"slug\":\"区别\",\"link\":\"#区别\",\"children\":[]}],\"readingTime\":{\"minutes\":1.68,\"words\":503},\"filePathRelative\":\"开发/『iOS』/16.md\",\"localizedDate\":\"2020年1月19日\",\"excerpt\":\"<h1> 三个方法区分</h1>\\n<p>initWithCode、awakaFromNib、initWithNibName 这三个方法都是用于创建 UIViewController 的初始化方法：</p>\\n<h2> initWithCoder:</h2>\\n<p>这是一个 NSCoding 协议中定义的方法，用于从归档数据中解码并初始化对象。在使用 Interface Builder 设计 UI 界面时，会将 UIViewController 对象编码为归档数据，并在运行时进行解码初始化。因此，当我们使用 Interface Builder 设计 UI 界面时，通常会使用这个方法来初始化 UIViewController 对象。</p>\",\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

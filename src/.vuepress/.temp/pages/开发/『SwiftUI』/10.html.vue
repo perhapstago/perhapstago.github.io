@@ -1,0 +1,245 @@
+<template><div><h1 id="_10-手势" tabindex="-1"><a class="header-anchor" href="#_10-手势" aria-hidden="true">#</a> 10.手势</h1>
+<p>在SwiftUI中，可以通过手势识别器（Gesture Recognizers）来捕捉和响应用户的手势操作。SwiftUI提供了一些内置的手势识别器，例如拖动手势、轻击手势、长按手势等，同时也支持自定义手势识别器。</p>
+<h2 id="内置手势识别器" tabindex="-1"><a class="header-anchor" href="#内置手势识别器" aria-hidden="true">#</a> 内置手势识别器</h2>
+<p>SwiftUI提供了多种内置手势识别器，可以通过视图修饰符.gesture()来添加手势识别器。常见的内置手势识别器有：</p>
+<ul>
+<li>TapGesture：轻击手势，可以设置点击次数、手指数等属性。</li>
+<li>LongPressGesture：长按手势，可以设置最短持续时间、最大移动距离等属性。</li>
+<li>DragGesture：拖动手势，可以设置最大/最小拖动速度、拖动方向等属性。</li>
+<li>MagnificationGesture：放大/缩小手势，可以设置最小/最大放大比例等属性。</li>
+<li>RotationGesture：旋转手势，可以设置最小/最大旋转角度等属性。</li>
+</ul>
+<h3 id="tapgesture" tabindex="-1"><a class="header-anchor" href="#tapgesture" aria-hidden="true">#</a> TapGesture</h3>
+<p>点击手势可以响应用户的单击事件，例如单击一个按钮或图像。使用 .tapGesture() 修饰符来添加这种手势。</p>
+<div class="language-swift line-numbers-mode" data-ext="swift"><pre v-pre class="language-swift"><code><span class="token class-name">Text</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Click me!"</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span>onTapGesture <span class="token punctuation">{</span>
+        <span class="token function">print</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Text is tapped"</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>在上面的代码中，当用户单击文本视图时，会在控制台上输出 &quot;Text is tapped&quot;。也可以将点击手势应用于任何 SwiftUI 视图，例如图片、按钮、形状等。</p>
+<h3 id="longpressgesture" tabindex="-1"><a class="header-anchor" href="#longpressgesture" aria-hidden="true">#</a> LongPressGesture</h3>
+<p>长按手势可以响应用户长按某个视图的事件。可以使用 .longPressGesture() 修饰符来添加此类手势。</p>
+<div class="language-swift line-numbers-mode" data-ext="swift"><pre v-pre class="language-swift"><code><span class="token class-name">Image</span><span class="token punctuation">(</span>systemName<span class="token punctuation">:</span> <span class="token string-literal"><span class="token string">"trash"</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">foregroundColor</span><span class="token punctuation">(</span><span class="token punctuation">.</span>red<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">font</span><span class="token punctuation">(</span><span class="token punctuation">.</span>largeTitle<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">padding</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">background</span><span class="token punctuation">(</span><span class="token class-name">Color</span><span class="token punctuation">.</span>white<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">cornerRadius</span><span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span>onLongPressGesture <span class="token punctuation">{</span>
+        <span class="token function">print</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Delete button is long pressed"</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>在上面的代码中，使用长按手势来响应 &quot;删除&quot; 按钮的长按事件。当用户长按 &quot;删除&quot; 按钮时，将在控制台上输出 &quot;Delete button is long pressed&quot;。</p>
+<h3 id="draggesture" tabindex="-1"><a class="header-anchor" href="#draggesture" aria-hidden="true">#</a> DragGesture</h3>
+<div class="language-swift line-numbers-mode" data-ext="swift"><pre v-pre class="language-swift"><code><span class="token class-name">Image</span><span class="token punctuation">(</span>systemName<span class="token punctuation">:</span> <span class="token string-literal"><span class="token string">"arrow.clockwise"</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">font</span><span class="token punctuation">(</span><span class="token punctuation">.</span>largeTitle<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">padding</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">background</span><span class="token punctuation">(</span><span class="token class-name">Color</span><span class="token punctuation">.</span>white<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">cornerRadius</span><span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">rotationGesture</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>在上面的代码中，使用旋转手势使箭头图标可以旋转。当用户使用两个手指旋转视图时，箭头图标将跟随手势旋转。</p>
+<h3 id="magnificationgesture" tabindex="-1"><a class="header-anchor" href="#magnificationgesture" aria-hidden="true">#</a> MagnificationGesture</h3>
+<p>缩放手势可以响应用户使用两个手指缩放视图的事件。可以使用 .scaleGesture() 修饰符来添加此类手势。</p>
+<div class="language-swift line-numbers-mode" data-ext="swift"><pre v-pre class="language-swift"><code><span class="token class-name">Image</span><span class="token punctuation">(</span>systemName<span class="token punctuation">:</span> <span class="token string-literal"><span class="token string">"photo"</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">resizable</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">scaledToFit</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">padding</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">background</span><span class="token punctuation">(</span><span class="token class-name">Color</span><span class="token punctuation">.</span>white<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">cornerRadius</span><span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">scaleEffect</span><span class="token punctuation">(</span>scale<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">gesture</span><span class="token punctuation">(</span>
+        <span class="token class-name">MagnificationGesture</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span>onChanged <span class="token punctuation">{</span> value <span class="token keyword">in</span>
+                <span class="token keyword">self</span><span class="token punctuation">.</span>scale <span class="token operator">=</span> value<span class="token punctuation">.</span>magnitude
+            <span class="token punctuation">}</span>
+    <span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>在上面的代码中，使用缩放手势来响应用户缩放图像视图的事件。当用户使用两个手指缩放视图时，图像视图将按比例缩放。</p>
+<h3 id="rotationgesture" tabindex="-1"><a class="header-anchor" href="#rotationgesture" aria-hidden="true">#</a> RotationGesture</h3>
+<p>可以使用 .dragGesture() 修饰符来添加拖动手势到视图中。这个修饰符可以让用户通过拖动手势来移动视图或者执行其他操作。</p>
+<div class="language-swift line-numbers-mode" data-ext="swift"><pre v-pre class="language-swift"><code><span class="token keyword">struct</span> <span class="token class-name">DragView</span><span class="token punctuation">:</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+    <span class="token attribute atrule">@State</span> <span class="token keyword">private</span> <span class="token keyword">var</span> offset <span class="token operator">=</span> <span class="token class-name">CGSize</span><span class="token punctuation">.</span>zero
+
+    <span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Circle</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">fill</span><span class="token punctuation">(</span><span class="token class-name">Color</span><span class="token punctuation">.</span>blue<span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">frame</span><span class="token punctuation">(</span>width<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">offset</span><span class="token punctuation">(</span>offset<span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">gesture</span><span class="token punctuation">(</span>
+                <span class="token class-name">DragGesture</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                    <span class="token punctuation">.</span>onChanged <span class="token punctuation">{</span> value <span class="token keyword">in</span>
+                        <span class="token keyword">self</span><span class="token punctuation">.</span>offset <span class="token operator">=</span> value<span class="token punctuation">.</span>translation
+                    <span class="token punctuation">}</span>
+                    <span class="token punctuation">.</span>onEnded <span class="token punctuation">{</span> <span class="token omit keyword">_</span> <span class="token keyword">in</span>
+                        <span class="token keyword">self</span><span class="token punctuation">.</span>offset <span class="token operator">=</span> <span class="token punctuation">.</span>zero
+                    <span class="token punctuation">}</span>
+            <span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>在这个例子中，我们创建了一个 Circle 视图，并使用 .offset() 修饰符将其初始位置移动到了屏幕中心。接着使用 .gesture() 修饰符将 DragGesture 添加到了这个视图中。在 DragGesture 上定义了两个回调函数，一个是 onChanged，用于处理手势拖动过程中的值变化，另一个是 onEnded，用于处理手势结束时的操作。<br>
+在 onChanged 中，更新了 offset 变量，将其设置为手势的 translation 值，也就是手指相对于视图初始位置的移动距离。在 onEnded 中，将 offset 重置为 .zero，以将视图移回到初始位置。<br></p>
+<h2 id="自定义手势识别器" tabindex="-1"><a class="header-anchor" href="#自定义手势识别器" aria-hidden="true">#</a> 自定义手势识别器</h2>
+<p>在 SwiftUI 中可以通过 Gesture 协议来创建自定义手势。 Gesture 协议是一个类型擦除协议，其具体实现取决于其遵循者。通常可以使用 Gesture 协议中的 onChanged、onEnded、onBegan 等方法来响应手势的不同状态。<br></p>
+<p>通过一个例子来演示如何创建自定义手势识别器。假设我们想要创建一个手势，使得在视图上画一个 &quot;V&quot; 字形时，触发相应的操作。<br></p>
+<p>首先，需要创建一个实现 Gesture 协议的结构体。在这个结构体中，我们需要实现 init 和 body 两个方法。</p>
+<div class="language-swift line-numbers-mode" data-ext="swift"><pre v-pre class="language-swift"><code><span class="token keyword">struct</span> <span class="token class-name">VGesture</span><span class="token punctuation">:</span> <span class="token class-name">Gesture</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> minimumDistance<span class="token punctuation">:</span> <span class="token class-name">CGFloat</span> <span class="token operator">=</span> <span class="token number">50</span>
+
+    <span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">Gesture</span> <span class="token punctuation">{</span>
+        <span class="token class-name">DragGesture</span><span class="token punctuation">(</span>minimumDistance<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span>onChanged <span class="token punctuation">{</span> value <span class="token keyword">in</span>
+                <span class="token keyword">let</span> startPoint <span class="token operator">=</span> value<span class="token punctuation">.</span>startLocation
+                <span class="token keyword">let</span> endPoint <span class="token operator">=</span> value<span class="token punctuation">.</span>location
+                <span class="token keyword">let</span> distance <span class="token operator">=</span> endPoint<span class="token punctuation">.</span><span class="token function">distance</span><span class="token punctuation">(</span>to<span class="token punctuation">:</span> startPoint<span class="token punctuation">)</span>
+                
+                <span class="token keyword">guard</span> distance <span class="token operator">>=</span> minimumDistance <span class="token keyword">else</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token punctuation">}</span>
+                
+                <span class="token keyword">let</span> angle <span class="token operator">=</span> endPoint<span class="token punctuation">.</span><span class="token function">angle</span><span class="token punctuation">(</span>to<span class="token punctuation">:</span> startPoint<span class="token punctuation">)</span>
+                
+                <span class="token keyword">if</span> angle <span class="token operator">></span> <span class="token operator">-</span><span class="token number">45</span> <span class="token operator">&amp;&amp;</span> angle <span class="token operator">&lt;</span> <span class="token number">45</span> <span class="token punctuation">{</span>
+                    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"V gesture detected!"</span></span><span class="token punctuation">)</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>在这个例子中创建了一个名为 VGesture 的结构体，并实现了 body 方法。使用了 DragGesture，并通过 minimumDistance 属性指定了拖动手势的最小距离。在 onChanged 方法中，我们检查了手势的起点和终点之间的距离是否足够长，然后计算了这两点之间的角度，并在特定的角度范围内触发了相应的操作。<br>
+在视图中使用自定义手势识别器：</p>
+<div class="language-swift line-numbers-mode" data-ext="swift"><pre v-pre class="language-swift"><code><span class="token keyword">struct</span> <span class="token class-name">ContentView</span><span class="token punctuation">:</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Text</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Hello, World!"</span></span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">gesture</span><span class="token punctuation">(</span><span class="token class-name">VGesture</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>将 VGesture 添加到了 Text 视图的手势中。在视图上画出一个 &quot;V&quot; 字形时，就会触发相应的操作。</p>
+<h2 id="simultaneousgesture" tabindex="-1"><a class="header-anchor" href="#simultaneousgesture" aria-hidden="true">#</a> simultaneousGesture</h2>
+<p>使用 simultaneousGesture 可以让视图同时响应多个手势，例如同时响应拖动和缩放手势：</p>
+<div class="language-swift line-numbers-mode" data-ext="swift"><pre v-pre class="language-swift"><code><span class="token attribute atrule">@State</span> <span class="token keyword">private</span> <span class="token keyword">var</span> scale<span class="token punctuation">:</span> <span class="token class-name">CGFloat</span> <span class="token operator">=</span> <span class="token number">1.0</span>
+<span class="token attribute atrule">@State</span> <span class="token keyword">private</span> <span class="token keyword">var</span> offset <span class="token operator">=</span> <span class="token class-name">CGSize</span><span class="token punctuation">.</span>zero
+
+<span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+    <span class="token class-name">Image</span><span class="token punctuation">(</span>systemName<span class="token punctuation">:</span> <span class="token string-literal"><span class="token string">"star.circle"</span></span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">resizable</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">frame</span><span class="token punctuation">(</span>width<span class="token punctuation">:</span> <span class="token number">200</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token number">200</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">foregroundColor</span><span class="token punctuation">(</span><span class="token punctuation">.</span>orange<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">scaleEffect</span><span class="token punctuation">(</span>scale<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">offset</span><span class="token punctuation">(</span>offset<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">gesture</span><span class="token punctuation">(</span>
+            <span class="token class-name">MagnificationGesture</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span>onChanged <span class="token punctuation">{</span> value <span class="token keyword">in</span>
+                    <span class="token keyword">self</span><span class="token punctuation">.</span>scale <span class="token operator">=</span> value<span class="token punctuation">.</span>magnitude
+                <span class="token punctuation">}</span>
+                <span class="token punctuation">.</span><span class="token function">simultaneously</span><span class="token punctuation">(</span>with<span class="token punctuation">:</span> <span class="token class-name">DragGesture</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                                    <span class="token punctuation">.</span>onChanged <span class="token punctuation">{</span> value <span class="token keyword">in</span>
+                                        <span class="token keyword">self</span><span class="token punctuation">.</span>offset <span class="token operator">=</span> value<span class="token punctuation">.</span>translation
+                                    <span class="token punctuation">}</span>
+                <span class="token punctuation">)</span>
+        <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>使用 simultaneous(with:) 将缩放手势和拖动手势同时绑定在图像视图上。</p>
+<h2 id="sequenced" tabindex="-1"><a class="header-anchor" href="#sequenced" aria-hidden="true">#</a> sequenced</h2>
+<p>使用 sequenced(before:) 可以让手势按顺序执行，例如先拖动，再缩放：</p>
+<div class="language-swift line-numbers-mode" data-ext="swift"><pre v-pre class="language-swift"><code><span class="token attribute atrule">@State</span> <span class="token keyword">private</span> <span class="token keyword">var</span> scale<span class="token punctuation">:</span> <span class="token class-name">CGFloat</span> <span class="token operator">=</span> <span class="token number">1.0</span>
+<span class="token attribute atrule">@State</span> <span class="token keyword">private</span> <span class="token keyword">var</span> offset <span class="token operator">=</span> <span class="token class-name">CGSize</span><span class="token punctuation">.</span>zero
+
+<span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+    <span class="token class-name">Image</span><span class="token punctuation">(</span>systemName<span class="token punctuation">:</span> <span class="token string-literal"><span class="token string">"star.circle"</span></span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">resizable</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">frame</span><span class="token punctuation">(</span>width<span class="token punctuation">:</span> <span class="token number">200</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token number">200</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">foregroundColor</span><span class="token punctuation">(</span><span class="token punctuation">.</span>orange<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">scaleEffect</span><span class="token punctuation">(</span>scale<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">offset</span><span class="token punctuation">(</span>offset<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">gesture</span><span class="token punctuation">(</span>
+            <span class="token class-name">DragGesture</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span>onChanged <span class="token punctuation">{</span> value <span class="token keyword">in</span>
+                    <span class="token keyword">self</span><span class="token punctuation">.</span>offset <span class="token operator">=</span> value<span class="token punctuation">.</span>translation
+                <span class="token punctuation">}</span>
+                <span class="token punctuation">.</span><span class="token function">sequenced</span><span class="token punctuation">(</span>before<span class="token punctuation">:</span> <span class="token class-name">MagnificationGesture</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                                    <span class="token punctuation">.</span>onChanged <span class="token punctuation">{</span> value <span class="token keyword">in</span>
+                                        <span class="token keyword">self</span><span class="token punctuation">.</span>scale <span class="token operator">=</span> value<span class="token punctuation">.</span>magnitude
+                                    <span class="token punctuation">}</span>
+                <span class="token punctuation">)</span>
+        <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>使用 sequenced(before:) 将缩放手势放在拖动手势之后执行。</p>
+<h2 id="exclusivegesture" tabindex="-1"><a class="header-anchor" href="#exclusivegesture" aria-hidden="true">#</a> exclusiveGesture</h2>
+<p>使用 exclusiveGesture 可以阻止其他手势的响应，例如只响应双指拖动手势：</p>
+<div class="language-swift line-numbers-mode" data-ext="swift"><pre v-pre class="language-swift"><code><span class="token attribute atrule">@State</span> <span class="token keyword">private</span> <span class="token keyword">var</span> offset <span class="token operator">=</span> <span class="token class-name">CGSize</span><span class="token punctuation">.</span>zero
+
+<span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+    <span class="token class-name">Image</span><span class="token punctuation">(</span>systemName<span class="token punctuation">:</span> <span class="token string-literal"><span class="token string">"star.circle"</span></span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">resizable</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">frame</span><span class="token punctuation">(</span>width<span class="token punctuation">:</span> <span class="token number">200</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token number">200</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">foregroundColor</span><span class="token punctuation">(</span><span class="token punctuation">.</span>orange<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">offset</span><span class="token punctuation">(</span>offset<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">gesture</span><span class="token punctuation">(</span>
+            <span class="token class-name">DragGesture</span><span class="token punctuation">(</span>minimumDistance<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span>onChanged <span class="token punctuation">{</span> value <span class="token keyword">in</span>
+                    <span class="token keyword">self</span><span class="token punctuation">.</span>offset <span class="token operator">=</span> value<span class="token punctuation">.</span>translation
+                <span class="token punctuation">}</span>
+                <span class="token punctuation">.</span><span class="token function">exclusively</span><span class="token punctuation">(</span>before<span class="token punctuation">:</span> <span class="token class-name">DragGesture</span><span class="token punctuation">(</span>minimumDistance<span class="token punctuation">:</span> <span class="token number">50</span><span class="token punctuation">)</span>
+                                    <span class="token punctuation">.</span>onChanged <span class="token punctuation">{</span> value <span class="token keyword">in</span>
+                                        <span class="token function">print</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Double finger drag"</span></span><span class="token punctuation">)</span>
+                                    <span class="token punctuation">}</span>
+                <span class="token punctuation">)</span>
+        <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>使用 exclusively(before:) 将双指拖动手势设置为独占手势，其他手势将被阻止响应。</p>
+<h2 id="交互动画" tabindex="-1"><a class="header-anchor" href="#交互动画" aria-hidden="true">#</a> 交互动画</h2>
+<p>在 SwiftUI 中可以利用手势和动画来实现丰富的交互效果</p>
+<h3 id="点击缩放" tabindex="-1"><a class="header-anchor" href="#点击缩放" aria-hidden="true">#</a> 点击缩放</h3>
+<p>可以使用 .scaleEffect 修饰符来实现点击时的缩放效果。具体实现方式是给 View 添加一个 .scaleEffect 修饰符，并在手势响应时将其设置为 0.8，释放时恢复为 1.0。</p>
+<div class="language-swift line-numbers-mode" data-ext="swift"><pre v-pre class="language-swift"><code><span class="token keyword">struct</span> <span class="token class-name">ScaleButton</span><span class="token punctuation">:</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+    <span class="token attribute atrule">@State</span> <span class="token keyword">private</span> <span class="token keyword">var</span> scale<span class="token punctuation">:</span> <span class="token class-name">CGFloat</span> <span class="token operator">=</span> <span class="token number">1.0</span>
+    
+    <span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Text</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Click Me"</span></span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">scaleEffect</span><span class="token punctuation">(</span>scale<span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">padding</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span>onTapGesture <span class="token punctuation">{</span>
+                <span class="token function">withAnimation</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token function">spring</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    scale <span class="token operator">=</span> <span class="token number">0.8</span>
+                <span class="token punctuation">}</span>
+                <span class="token class-name">DispatchQueue</span><span class="token punctuation">.</span>main<span class="token punctuation">.</span><span class="token function">asyncAfter</span><span class="token punctuation">(</span>deadline<span class="token punctuation">:</span> <span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">0.2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token function">withAnimation</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token function">spring</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        scale <span class="token operator">=</span> <span class="token number">1.0</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>在这个示例中使用了 .spring() 来定义动画类型，并在两次动画之间添加了一个延迟以确保效果正常。</p>
+<h3 id="拖拽移动" tabindex="-1"><a class="header-anchor" href="#拖拽移动" aria-hidden="true">#</a> 拖拽移动</h3>
+<p>可以使用 .offset 修饰符来实现拖拽移动的效果。具体实现方式是给 View 添加一个 .offset 修饰符，并在手势响应时更新其值。</p>
+<div class="language-swift line-numbers-mode" data-ext="swift"><pre v-pre class="language-swift"><code><span class="token keyword">struct</span> <span class="token class-name">DragView</span><span class="token punctuation">:</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+    <span class="token attribute atrule">@GestureState</span> <span class="token keyword">private</span> <span class="token keyword">var</span> dragState <span class="token operator">=</span> <span class="token class-name">DragState</span><span class="token punctuation">.</span>inactive
+    <span class="token attribute atrule">@State</span> <span class="token keyword">private</span> <span class="token keyword">var</span> position <span class="token operator">=</span> <span class="token class-name">CGSize</span><span class="token punctuation">.</span>zero
+    
+    <span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> dragGesture <span class="token operator">=</span> <span class="token class-name">DragGesture</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">updating</span><span class="token punctuation">(</span>$dragState<span class="token punctuation">)</span> <span class="token punctuation">{</span> value<span class="token punctuation">,</span> dragInfo<span class="token punctuation">,</span> <span class="token omit keyword">_</span> <span class="token keyword">in</span>
+                dragInfo <span class="token operator">=</span> <span class="token punctuation">.</span><span class="token function">dragging</span><span class="token punctuation">(</span>translation<span class="token punctuation">:</span> value<span class="token punctuation">.</span>translation<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+            <span class="token punctuation">.</span>onEnded <span class="token punctuation">{</span> value <span class="token keyword">in</span>
+                position<span class="token punctuation">.</span>height <span class="token operator">+=</span> value<span class="token punctuation">.</span>translation<span class="token punctuation">.</span>height
+                position<span class="token punctuation">.</span>width <span class="token operator">+=</span> value<span class="token punctuation">.</span>translation<span class="token punctuation">.</span>width
+            <span class="token punctuation">}</span>
+        
+        <span class="token keyword">return</span> <span class="token class-name">Circle</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">fill</span><span class="token punctuation">(</span><span class="token class-name">Color</span><span class="token punctuation">.</span>blue<span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">frame</span><span class="token punctuation">(</span>width<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">scaleEffect</span><span class="token punctuation">(</span>dragState<span class="token punctuation">.</span>isActive <span class="token operator">?</span> <span class="token number">1.2</span> <span class="token punctuation">:</span> <span class="token number">1.0</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">offset</span><span class="token punctuation">(</span>
+                x<span class="token punctuation">:</span> position<span class="token punctuation">.</span>width <span class="token operator">+</span> dragState<span class="token punctuation">.</span>translation<span class="token punctuation">.</span>width<span class="token punctuation">,</span>
+                y<span class="token punctuation">:</span> position<span class="token punctuation">.</span>height <span class="token operator">+</span> dragState<span class="token punctuation">.</span>translation<span class="token punctuation">.</span>height
+            <span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">gesture</span><span class="token punctuation">(</span>dragGesture<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">enum</span> <span class="token class-name">DragState</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> inactive
+    <span class="token keyword">case</span> <span class="token function">dragging</span><span class="token punctuation">(</span>translation<span class="token punctuation">:</span> <span class="token class-name">CGSize</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>使用了 @GestureState 来定义手势状态，并使用了 DragGesture 来处理拖拽事件。使用 updating 方法来更新手势状态，并在 onEnded 方法中更新位置信息。</p>
+</div></template>
+
+

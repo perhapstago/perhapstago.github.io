@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-7a4df45e\",\"path\":\"/%E5%BC%80%E5%8F%91/SwiftUI/3.html\",\"title\":\"03.视图结构\",\"lang\":\"zh-CN\",\"frontmatter\":{\"date\":\"2022-01-03T00:00:00.000Z\",\"category\":[\"苹果\",\"水果\"],\"tag\":[\"红\",\"大\",\"圆\"],\"description\":\"03.视图结构 视图结构 在 SwiftUI 中，视图是构建用户界面的基本单元。每个视图都是由其他视图组成的，这种嵌套结构形成了一个视图树。根据应用程序的需要，可以使用各种视图类型来构建视图树，例如文本视图、图像视图、按钮视图等。 在 SwiftUI 中，我们可以使用 View 协议来定义自定义视图。我们可以在自定义视图中定义视图的外观和行为，并将其组合到其他视图中。 组合方式 SwiftUI 的一个关键特性是视图的组合方式。在 SwiftUI 中，可以将多个视图组合在一起以创建复杂的用户界面。可以使用诸如 VStack、HStack、ZStack 等容器视图来组合视图。\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"http://yunpu.tech/%E5%BC%80%E5%8F%91/SwiftUI/3.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"夏日的瓜牛\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"03.视图结构\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"03.视图结构 视图结构 在 SwiftUI 中，视图是构建用户界面的基本单元。每个视图都是由其他视图组成的，这种嵌套结构形成了一个视图树。根据应用程序的需要，可以使用各种视图类型来构建视图树，例如文本视图、图像视图、按钮视图等。 在 SwiftUI 中，我们可以使用 View 协议来定义自定义视图。我们可以在自定义视图中定义视图的外观和行为，并将其组合到其他视图中。 组合方式 SwiftUI 的一个关键特性是视图的组合方式。在 SwiftUI 中，可以将多个视图组合在一起以创建复杂的用户界面。可以使用诸如 VStack、HStack、ZStack 等容器视图来组合视图。\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"红\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"大\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"圆\"}],[\"meta\",{\"property\":\"article:published_time\",\"content\":\"2022-01-03T00:00:00.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"03.视图结构\\\",\\\"image\\\":[\\\"\\\"],\\\"datePublished\\\":\\\"2022-01-03T00:00:00.000Z\\\",\\\"dateModified\\\":null,\\\"author\\\":[]}\"]]},\"headers\":[{\"level\":2,\"title\":\"视图结构\",\"slug\":\"视图结构\",\"link\":\"#视图结构\",\"children\":[]},{\"level\":2,\"title\":\"组合方式\",\"slug\":\"组合方式\",\"link\":\"#组合方式\",\"children\":[]}],\"readingTime\":{\"minutes\":1.39,\"words\":418},\"filePathRelative\":\"开发/SwiftUI/3.md\",\"localizedDate\":\"2022年1月3日\",\"excerpt\":\"<h1> 03.视图结构</h1>\\n<h2> 视图结构</h2>\\n<p>在 SwiftUI 中，视图是构建用户界面的基本单元。每个视图都是由其他视图组成的，这种嵌套结构形成了一个视图树。根据应用程序的需要，可以使用各种视图类型来构建视图树，例如文本视图、图像视图、按钮视图等。<br></p>\\n<p>在 SwiftUI 中，我们可以使用 View 协议来定义自定义视图。我们可以在自定义视图中定义视图的外观和行为，并将其组合到其他视图中。</p>\\n<h2> 组合方式</h2>\\n<p>SwiftUI 的一个关键特性是视图的组合方式。在 SwiftUI 中，可以将多个视图组合在一起以创建复杂的用户界面。可以使用诸如 VStack、HStack、ZStack 等容器视图来组合视图。</p>\",\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

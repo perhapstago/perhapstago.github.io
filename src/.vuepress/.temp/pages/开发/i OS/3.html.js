@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-ef6ecc58\",\"path\":\"/%E5%BC%80%E5%8F%91/i%20OS/3.html\",\"title\":\"UI离屏渲染\",\"lang\":\"zh-CN\",\"frontmatter\":{\"date\":\"2022-01-03T00:00:00.000Z\",\"category\":[\"苹果\",\"水果\"],\"tag\":[\"红\",\"大\",\"圆\"],\"description\":\"UI离屏渲染 UI离屏渲染是指将需要绘制的图层从当前屏幕分离出来，进行单独的处理，然后再将处理结果合并到当前屏幕上。在iOS中，离屏渲染会带来额外的系统开销，可能会降低性能，因此需要谨慎使用。 出现原因 当一个图层需要在屏幕上呈现时，系统会将该图层的内容绘制到一张位图上，然后再将该位图绘制到屏幕上。如果这个图层有一些需要额外处理的属性，比如圆角、阴影、透明度等，那么系统就需要在绘制位图之前，先对这些属性进行处理，处理完之后再将位图绘制到屏幕上，这就是离屏渲染。 常见操作 常见的离屏渲染操作\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"http://yunpu.tech/%E5%BC%80%E5%8F%91/i%20OS/3.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"夏日的瓜牛\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"UI离屏渲染\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"UI离屏渲染 UI离屏渲染是指将需要绘制的图层从当前屏幕分离出来，进行单独的处理，然后再将处理结果合并到当前屏幕上。在iOS中，离屏渲染会带来额外的系统开销，可能会降低性能，因此需要谨慎使用。 出现原因 当一个图层需要在屏幕上呈现时，系统会将该图层的内容绘制到一张位图上，然后再将该位图绘制到屏幕上。如果这个图层有一些需要额外处理的属性，比如圆角、阴影、透明度等，那么系统就需要在绘制位图之前，先对这些属性进行处理，处理完之后再将位图绘制到屏幕上，这就是离屏渲染。 常见操作 常见的离屏渲染操作\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"红\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"大\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"圆\"}],[\"meta\",{\"property\":\"article:published_time\",\"content\":\"2022-01-03T00:00:00.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"UI离屏渲染\\\",\\\"image\\\":[\\\"\\\"],\\\"datePublished\\\":\\\"2022-01-03T00:00:00.000Z\\\",\\\"dateModified\\\":null,\\\"author\\\":[]}\"]]},\"headers\":[{\"level\":2,\"title\":\"出现原因\",\"slug\":\"出现原因\",\"link\":\"#出现原因\",\"children\":[]},{\"level\":2,\"title\":\"常见操作\",\"slug\":\"常见操作\",\"link\":\"#常见操作\",\"children\":[]},{\"level\":2,\"title\":\"为什么要避免离屏渲染\",\"slug\":\"为什么要避免离屏渲染\",\"link\":\"#为什么要避免离屏渲染\",\"children\":[]},{\"level\":2,\"title\":\"如何避免UI离屏渲染\",\"slug\":\"如何避免ui离屏渲染\",\"link\":\"#如何避免ui离屏渲染\",\"children\":[]}],\"readingTime\":{\"minutes\":3.8,\"words\":1141},\"filePathRelative\":\"开发/i OS/3.md\",\"localizedDate\":\"2022年1月3日\",\"excerpt\":\"<h1> UI离屏渲染</h1>\\n<p>UI离屏渲染是指将需要绘制的图层从当前屏幕分离出来，进行单独的处理，然后再将处理结果合并到当前屏幕上。在iOS中，离屏渲染会带来额外的系统开销，可能会降低性能，因此需要谨慎使用。</p>\\n<h2> 出现原因</h2>\\n<p>当一个图层需要在屏幕上呈现时，系统会将该图层的内容绘制到一张位图上，然后再将该位图绘制到屏幕上。如果这个图层有一些需要额外处理的属性，比如圆角、阴影、透明度等，那么系统就需要在绘制位图之前，先对这些属性进行处理，处理完之后再将位图绘制到屏幕上，这就是离屏渲染。<br></p>\\n<h2> 常见操作</h2>\\n<p>常见的离屏渲染操作</p>\",\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

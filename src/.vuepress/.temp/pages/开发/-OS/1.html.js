@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-abb5b86e\",\"path\":\"/%E5%BC%80%E5%8F%91/-OS/1.html\",\"title\":\"事件传递机制\",\"lang\":\"zh-CN\",\"frontmatter\":{\"date\":\"2022-01-01T00:00:00.000Z\",\"category\":[\"苹果\"],\"tag\":[\"红\",\"大\",\"圆\"],\"description\":\"事件传递机制 iOS中用户的操作会被转换为UI事件，并由系统传递给应用程序。这个过程涉及到多个对象的交互，其中包括UIApplication、UIWindow、UIView和UIResponder。 事件的传递过程 当用户在屏幕上进行操作时，如点击按钮或滑动屏幕，这些操作将被转换为UI事件。这些事件将从UIApplication对象开始传递，经过UIWindow和UIView，最终到达事件的目标响应对象。 事件传递机制是一个基于响应链的过程。当用户执行某个操作时（例如点击屏幕），系统会将该操作转换为一个或多个 UI 事件，并将其传递给应用程序。\"},\"headers\":[{\"level\":2,\"title\":\"事件的传递过程\",\"slug\":\"事件的传递过程\",\"link\":\"#事件的传递过程\",\"children\":[{\"level\":3,\"title\":\"UIApplication 对象接收到事件\",\"slug\":\"uiapplication-对象接收到事件\",\"link\":\"#uiapplication-对象接收到事件\",\"children\":[]},{\"level\":3,\"title\":\"UIWindow 接收事件\",\"slug\":\"uiwindow-接收事件\",\"link\":\"#uiwindow-接收事件\",\"children\":[]},{\"level\":3,\"title\":\"事件传递给视图\",\"slug\":\"事件传递给视图\",\"link\":\"#事件传递给视图\",\"children\":[]},{\"level\":3,\"title\":\"视图判断是否能够响应事件\",\"slug\":\"视图判断是否能够响应事件\",\"link\":\"#视图判断是否能够响应事件\",\"children\":[]},{\"level\":3,\"title\":\"事件递归传递至下一级视图\",\"slug\":\"事件递归传递至下一级视图\",\"link\":\"#事件递归传递至下一级视图\",\"children\":[]},{\"level\":3,\"title\":\"事件传递顺序\",\"slug\":\"事件传递顺序\",\"link\":\"#事件传递顺序\",\"children\":[]}]},{\"level\":2,\"title\":\"响应链\",\"slug\":\"响应链\",\"link\":\"#响应链\",\"children\":[]},{\"level\":2,\"title\":\"Api\",\"slug\":\"api\",\"link\":\"#api\",\"children\":[{\"level\":3,\"title\":\"UIApplication\",\"slug\":\"uiapplication\",\"link\":\"#uiapplication\",\"children\":[]},{\"level\":3,\"title\":\"UIEvent\",\"slug\":\"uievent\",\"link\":\"#uievent\",\"children\":[]},{\"level\":3,\"title\":\"UIView\",\"slug\":\"uiview\",\"link\":\"#uiview\",\"children\":[]},{\"level\":3,\"title\":\"hitTest:withEvent:\",\"slug\":\"hittest-withevent\",\"link\":\"#hittest-withevent\",\"children\":[]},{\"level\":3,\"title\":\"pointInside:withEvent:\",\"slug\":\"pointinside-withevent\",\"link\":\"#pointinside-withevent\",\"children\":[]}]},{\"level\":2,\"title\":\"总结\",\"slug\":\"总结\",\"link\":\"#总结\",\"children\":[]}],\"readingTime\":{\"minutes\":6.52,\"words\":1955},\"filePathRelative\":\"开发/-OS/1.md\",\"localizedDate\":\"2022年1月1日\",\"excerpt\":\"<h1> 事件传递机制</h1>\\n<p>iOS中用户的操作会被转换为UI事件，并由系统传递给应用程序。这个过程涉及到多个对象的交互，其中包括UIApplication、UIWindow、UIView和UIResponder。</p>\\n<h2> 事件的传递过程</h2>\\n<p>当用户在屏幕上进行操作时，如点击按钮或滑动屏幕，这些操作将被转换为UI事件。这些事件将从UIApplication对象开始传递，经过UIWindow和UIView，最终到达事件的目标响应对象。<br></p>\\n<p>事件传递机制是一个基于响应链的过程。当用户执行某个操作时（例如点击屏幕），系统会将该操作转换为一个或多个 UI 事件，并将其传递给应用程序。<br></p>\",\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}
