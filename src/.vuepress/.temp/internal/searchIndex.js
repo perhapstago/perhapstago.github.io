@@ -4427,9 +4427,163 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "iOS 分类",
+    "headers": [],
+    "path": "/category/ios/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "UI 标签",
+    "headers": [],
+    "path": "/tag/ui/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Swift 分类",
+    "headers": [],
+    "path": "/category/swift/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "交互 标签",
+    "headers": [],
+    "path": "/tag/%E4%BA%A4%E4%BA%92/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "SwiftUI 分类",
+    "headers": [],
+    "path": "/category/swiftui/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "语法 标签",
+    "headers": [],
+    "path": "/tag/%E8%AF%AD%E6%B3%95/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Vue 分类",
+    "headers": [],
+    "path": "/category/vue/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "网络 标签",
+    "headers": [],
+    "path": "/tag/%E7%BD%91%E7%BB%9C/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "前端 分类",
+    "headers": [],
+    "path": "/category/%E5%89%8D%E7%AB%AF/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "动画 标签",
+    "headers": [],
+    "path": "/tag/%E5%8A%A8%E7%94%BB/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Xcode 分类",
     "headers": [],
     "path": "/category/xcode/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "区分 标签",
+    "headers": [],
+    "path": "/tag/%E5%8C%BA%E5%88%86/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "生命周期 标签",
+    "headers": [],
+    "path": "/tag/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "调试 标签",
+    "headers": [],
+    "path": "/tag/%E8%B0%83%E8%AF%95/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "优化 标签",
+    "headers": [],
+    "path": "/tag/%E4%BC%98%E5%8C%96/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "多线程 标签",
+    "headers": [],
+    "path": "/tag/%E5%A4%9A%E7%BA%BF%E7%A8%8B/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Block 标签",
+    "headers": [],
+    "path": "/tag/block/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "底层原理 标签",
+    "headers": [],
+    "path": "/tag/%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "代码之外 标签",
+    "headers": [],
+    "path": "/tag/%E4%BB%A3%E7%A0%81%E4%B9%8B%E5%A4%96/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "框架 标签",
+    "headers": [],
+    "path": "/tag/%E6%A1%86%E6%9E%B6/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "runtime 标签",
+    "headers": [],
+    "path": "/tag/runtime/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "循环引用 标签",
+    "headers": [],
+    "path": "/tag/%E5%BE%AA%E7%8E%AF%E5%BC%95%E7%94%A8/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "内存管理 标签",
+    "headers": [],
+    "path": "/tag/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/",
     "pathLocale": "/",
     "extraFields": []
   }

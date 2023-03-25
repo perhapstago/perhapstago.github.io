@@ -193,6 +193,50 @@ export const pagesComponents = {
   "v-154dc4c4": defineAsyncComponent(() => import(/* webpackChunkName: "v-154dc4c4" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/star/index.html.vue")),
   // path: /timeline/
   "v-01560935": defineAsyncComponent(() => import(/* webpackChunkName: "v-01560935" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/timeline/index.html.vue")),
+  // path: /category/ios/
+  "v-65f0d5da": defineAsyncComponent(() => import(/* webpackChunkName: "v-65f0d5da" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/category/ios/index.html.vue")),
+  // path: /tag/ui/
+  "v-0da0f70d": defineAsyncComponent(() => import(/* webpackChunkName: "v-0da0f70d" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/tag/ui/index.html.vue")),
+  // path: /category/swift/
+  "v-82df6ad8": defineAsyncComponent(() => import(/* webpackChunkName: "v-82df6ad8" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/category/swift/index.html.vue")),
+  // path: /tag/%E4%BA%A4%E4%BA%92/
+  "v-925ee04a": defineAsyncComponent(() => import(/* webpackChunkName: "v-925ee04a" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/tag/交互/index.html.vue")),
+  // path: /category/swiftui/
+  "v-5ba90940": defineAsyncComponent(() => import(/* webpackChunkName: "v-5ba90940" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/category/swiftui/index.html.vue")),
+  // path: /tag/%E8%AF%AD%E6%B3%95/
+  "v-2639cad6": defineAsyncComponent(() => import(/* webpackChunkName: "v-2639cad6" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/tag/语法/index.html.vue")),
+  // path: /category/vue/
+  "v-65f6d381": defineAsyncComponent(() => import(/* webpackChunkName: "v-65f6d381" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/category/vue/index.html.vue")),
+  // path: /tag/%E7%BD%91%E7%BB%9C/
+  "v-ec4438a6": defineAsyncComponent(() => import(/* webpackChunkName: "v-ec4438a6" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/tag/网络/index.html.vue")),
+  // path: /category/%E5%89%8D%E7%AB%AF/
+  "v-e9c7e408": defineAsyncComponent(() => import(/* webpackChunkName: "v-e9c7e408" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/category/前端/index.html.vue")),
+  // path: /tag/%E5%8A%A8%E7%94%BB/
+  "v-000bed88": defineAsyncComponent(() => import(/* webpackChunkName: "v-000bed88" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/tag/动画/index.html.vue")),
   // path: /category/xcode/
   "v-73fd3efc": defineAsyncComponent(() => import(/* webpackChunkName: "v-73fd3efc" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/category/xcode/index.html.vue")),
+  // path: /tag/%E5%8C%BA%E5%88%86/
+  "v-36447397": defineAsyncComponent(() => import(/* webpackChunkName: "v-36447397" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/tag/区分/index.html.vue")),
+  // path: /tag/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/
+  "v-727fc466": defineAsyncComponent(() => import(/* webpackChunkName: "v-727fc466" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/tag/生命周期/index.html.vue")),
+  // path: /tag/%E8%B0%83%E8%AF%95/
+  "v-849f1c12": defineAsyncComponent(() => import(/* webpackChunkName: "v-849f1c12" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/tag/调试/index.html.vue")),
+  // path: /tag/%E4%BC%98%E5%8C%96/
+  "v-3102ad68": defineAsyncComponent(() => import(/* webpackChunkName: "v-3102ad68" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/tag/优化/index.html.vue")),
+  // path: /tag/%E5%A4%9A%E7%BA%BF%E7%A8%8B/
+  "v-415e2fc5": defineAsyncComponent(() => import(/* webpackChunkName: "v-415e2fc5" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/tag/多线程/index.html.vue")),
+  // path: /tag/block/
+  "v-42eb45e0": defineAsyncComponent(() => import(/* webpackChunkName: "v-42eb45e0" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/tag/block/index.html.vue")),
+  // path: /tag/%E5%BA%95%E5%B1%82%E5%8E%9F%E7%90%86/
+  "v-2902adac": defineAsyncComponent(() => import(/* webpackChunkName: "v-2902adac" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/tag/底层原理/index.html.vue")),
+  // path: /tag/%E4%BB%A3%E7%A0%81%E4%B9%8B%E5%A4%96/
+  "v-13d496ae": defineAsyncComponent(() => import(/* webpackChunkName: "v-13d496ae" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/tag/代码之外/index.html.vue")),
+  // path: /tag/%E6%A1%86%E6%9E%B6/
+  "v-f4d3cd72": defineAsyncComponent(() => import(/* webpackChunkName: "v-f4d3cd72" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/tag/框架/index.html.vue")),
+  // path: /tag/runtime/
+  "v-826600b6": defineAsyncComponent(() => import(/* webpackChunkName: "v-826600b6" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/tag/runtime/index.html.vue")),
+  // path: /tag/%E5%BE%AA%E7%8E%AF%E5%BC%95%E7%94%A8/
+  "v-5ecb5bc1": defineAsyncComponent(() => import(/* webpackChunkName: "v-5ecb5bc1" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/tag/循环引用/index.html.vue")),
+  // path: /tag/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/
+  "v-1190a5ee": defineAsyncComponent(() => import(/* webpackChunkName: "v-1190a5ee" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/tag/内存管理/index.html.vue")),
 }
