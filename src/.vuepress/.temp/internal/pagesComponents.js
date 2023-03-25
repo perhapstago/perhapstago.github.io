@@ -5,8 +5,6 @@ export const pagesComponents = {
   "v-8daa1a0e": defineAsyncComponent(() => import(/* webpackChunkName: "v-8daa1a0e" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/index.html.vue")),
   // path: /intro.html
   "v-184f4da6": defineAsyncComponent(() => import(/* webpackChunkName: "v-184f4da6" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/intro.html.vue")),
-  // path: /slides.html
-  "v-2e3eac9e": defineAsyncComponent(() => import(/* webpackChunkName: "v-2e3eac9e" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/slides.html.vue")),
   // path: /%E9%9A%8F%E8%AE%B0/1.html
   "v-f915a88a": defineAsyncComponent(() => import(/* webpackChunkName: "v-f915a88a" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/随记/1.html.vue")),
   // path: /%E9%9A%8F%E8%AE%B0/2.html
@@ -25,6 +23,40 @@ export const pagesComponents = {
   "v-5991bcf7": defineAsyncComponent(() => import(/* webpackChunkName: "v-5991bcf7" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『Other』/3.html.vue")),
   // path: /%E5%BC%80%E5%8F%91/%E3%80%8EOther%E3%80%8F/4.html
   "v-5b469596": defineAsyncComponent(() => import(/* webpackChunkName: "v-5b469596" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『Other』/4.html.vue")),
+  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/0.html
+  "v-0da6f331": defineAsyncComponent(() => import(/* webpackChunkName: "v-0da6f331" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/0.html.vue")),
+  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/1.html
+  "v-0f5bcbd0": defineAsyncComponent(() => import(/* webpackChunkName: "v-0f5bcbd0" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/1.html.vue")),
+  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/10.html
+  "v-475e9adc": defineAsyncComponent(() => import(/* webpackChunkName: "v-475e9adc" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/10.html.vue")),
+  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/11.html
+  "v-43f4e99e": defineAsyncComponent(() => import(/* webpackChunkName: "v-43f4e99e" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/11.html.vue")),
+  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/12.html
+  "v-408b3860": defineAsyncComponent(() => import(/* webpackChunkName: "v-408b3860" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/12.html.vue")),
+  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/13.html
+  "v-3d218722": defineAsyncComponent(() => import(/* webpackChunkName: "v-3d218722" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/13.html.vue")),
+  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/14.html
+  "v-39b7d5e4": defineAsyncComponent(() => import(/* webpackChunkName: "v-39b7d5e4" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/14.html.vue")),
+  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/15.html
+  "v-364e24a6": defineAsyncComponent(() => import(/* webpackChunkName: "v-364e24a6" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/15.html.vue")),
+  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/16.html
+  "v-32e47368": defineAsyncComponent(() => import(/* webpackChunkName: "v-32e47368" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/16.html.vue")),
+  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/2.html
+  "v-1110a46f": defineAsyncComponent(() => import(/* webpackChunkName: "v-1110a46f" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/2.html.vue")),
+  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/3.html
+  "v-12c57d0e": defineAsyncComponent(() => import(/* webpackChunkName: "v-12c57d0e" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/3.html.vue")),
+  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/4.html
+  "v-147a55ad": defineAsyncComponent(() => import(/* webpackChunkName: "v-147a55ad" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/4.html.vue")),
+  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/5.html
+  "v-162f2e4c": defineAsyncComponent(() => import(/* webpackChunkName: "v-162f2e4c" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/5.html.vue")),
+  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/6.html
+  "v-17e406eb": defineAsyncComponent(() => import(/* webpackChunkName: "v-17e406eb" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/6.html.vue")),
+  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/7.html
+  "v-1998df8a": defineAsyncComponent(() => import(/* webpackChunkName: "v-1998df8a" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/7.html.vue")),
+  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/8.html
+  "v-1b4db829": defineAsyncComponent(() => import(/* webpackChunkName: "v-1b4db829" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/8.html.vue")),
+  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/9.html
+  "v-1d0290c8": defineAsyncComponent(() => import(/* webpackChunkName: "v-1d0290c8" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/9.html.vue")),
   // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/1.html
   "v-730164bc": defineAsyncComponent(() => import(/* webpackChunkName: "v-730164bc" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『Swift』/1.html.vue")),
   // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/10.html
@@ -65,40 +97,6 @@ export const pagesComponents = {
   "v-2201d80a": defineAsyncComponent(() => import(/* webpackChunkName: "v-2201d80a" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『Vue』/6.html.vue")),
   // path: /%E5%BC%80%E5%8F%91/%E3%80%8EVue%E3%80%8F/7.html
   "v-23b6b0a9": defineAsyncComponent(() => import(/* webpackChunkName: "v-23b6b0a9" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『Vue』/7.html.vue")),
-  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/0.html
-  "v-0da6f331": defineAsyncComponent(() => import(/* webpackChunkName: "v-0da6f331" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/0.html.vue")),
-  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/1.html
-  "v-0f5bcbd0": defineAsyncComponent(() => import(/* webpackChunkName: "v-0f5bcbd0" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/1.html.vue")),
-  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/10.html
-  "v-475e9adc": defineAsyncComponent(() => import(/* webpackChunkName: "v-475e9adc" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/10.html.vue")),
-  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/11.html
-  "v-43f4e99e": defineAsyncComponent(() => import(/* webpackChunkName: "v-43f4e99e" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/11.html.vue")),
-  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/12.html
-  "v-408b3860": defineAsyncComponent(() => import(/* webpackChunkName: "v-408b3860" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/12.html.vue")),
-  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/13.html
-  "v-3d218722": defineAsyncComponent(() => import(/* webpackChunkName: "v-3d218722" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/13.html.vue")),
-  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/14.html
-  "v-39b7d5e4": defineAsyncComponent(() => import(/* webpackChunkName: "v-39b7d5e4" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/14.html.vue")),
-  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/15.html
-  "v-364e24a6": defineAsyncComponent(() => import(/* webpackChunkName: "v-364e24a6" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/15.html.vue")),
-  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/16.html
-  "v-32e47368": defineAsyncComponent(() => import(/* webpackChunkName: "v-32e47368" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/16.html.vue")),
-  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/2.html
-  "v-1110a46f": defineAsyncComponent(() => import(/* webpackChunkName: "v-1110a46f" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/2.html.vue")),
-  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/3.html
-  "v-12c57d0e": defineAsyncComponent(() => import(/* webpackChunkName: "v-12c57d0e" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/3.html.vue")),
-  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/4.html
-  "v-147a55ad": defineAsyncComponent(() => import(/* webpackChunkName: "v-147a55ad" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/4.html.vue")),
-  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/5.html
-  "v-162f2e4c": defineAsyncComponent(() => import(/* webpackChunkName: "v-162f2e4c" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/5.html.vue")),
-  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/6.html
-  "v-17e406eb": defineAsyncComponent(() => import(/* webpackChunkName: "v-17e406eb" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/6.html.vue")),
-  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/7.html
-  "v-1998df8a": defineAsyncComponent(() => import(/* webpackChunkName: "v-1998df8a" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/7.html.vue")),
-  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/8.html
-  "v-1b4db829": defineAsyncComponent(() => import(/* webpackChunkName: "v-1b4db829" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/8.html.vue")),
-  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/9.html
-  "v-1d0290c8": defineAsyncComponent(() => import(/* webpackChunkName: "v-1d0290c8" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/9.html.vue")),
   // path: /%E5%BC%80%E5%8F%91/%E3%80%8EXcode%E3%80%8F/1.html
   "v-283ff50e": defineAsyncComponent(() => import(/* webpackChunkName: "v-283ff50e" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『Xcode』/1.html.vue")),
   // path: /%E5%BC%80%E5%8F%91/%E3%80%8EXcode%E3%80%8F/2.html
@@ -175,12 +173,12 @@ export const pagesComponents = {
   "v-8a7c859e": defineAsyncComponent(() => import(/* webpackChunkName: "v-8a7c859e" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『Other』/index.html.vue")),
   // path: /%E5%BC%80%E5%8F%91/
   "v-4791d343": defineAsyncComponent(() => import(/* webpackChunkName: "v-4791d343" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/index.html.vue")),
+  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/
+  "v-551dcaf0": defineAsyncComponent(() => import(/* webpackChunkName: "v-551dcaf0" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/index.html.vue")),
   // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/
   "v-30725718": defineAsyncComponent(() => import(/* webpackChunkName: "v-30725718" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『Swift』/index.html.vue")),
   // path: /%E5%BC%80%E5%8F%91/%E3%80%8EVue%E3%80%8F/
   "v-7a0deee7": defineAsyncComponent(() => import(/* webpackChunkName: "v-7a0deee7" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『Vue』/index.html.vue")),
-  // path: /%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/
-  "v-551dcaf0": defineAsyncComponent(() => import(/* webpackChunkName: "v-551dcaf0" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『SwiftUI』/index.html.vue")),
   // path: /%E5%BC%80%E5%8F%91/%E3%80%8EXcode%E3%80%8F/
   "v-5bf6eb74": defineAsyncComponent(() => import(/* webpackChunkName: "v-5bf6eb74" */"/Users/shaoyunpu/perhapstago.github.io/src/.vuepress/.temp/pages/开发/『Xcode』/index.html.vue")),
   // path: /%E5%BC%80%E5%8F%91/%E3%80%8EiOS%E3%80%8F/
