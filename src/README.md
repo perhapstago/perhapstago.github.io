@@ -7,7 +7,7 @@ heroImage: /center.jpg
 heroText:  一些记录
 heroFullScreen: true
 tagline: 一步一个脚印，致敬每个当下的坚定的你。
-bgImage: /13.svg
+bgImage: /back.jpg
 
 # projects:
 #   - icon: project
