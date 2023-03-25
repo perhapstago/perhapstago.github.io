@@ -534,819 +534,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "00.官方教程读后记录",
-    "headers": [
-      {
-        "level": 2,
-        "title": "官方教程",
-        "slug": "官方教程",
-        "link": "#官方教程",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/0.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "01.概述",
-    "headers": [
-      {
-        "level": 2,
-        "title": "声明式语法",
-        "slug": "声明式语法",
-        "link": "#声明式语法",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "自动化布局",
-        "slug": "自动化布局",
-        "link": "#自动化布局",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "数据驱动界面",
-        "slug": "数据驱动界面",
-        "link": "#数据驱动界面",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "可组合性",
-        "slug": "可组合性",
-        "link": "#可组合性",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "实时预览",
-        "slug": "实时预览",
-        "link": "#实时预览",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "总结",
-        "slug": "总结",
-        "link": "#总结",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/1.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "10.手势",
-    "headers": [
-      {
-        "level": 2,
-        "title": "内置手势识别器",
-        "slug": "内置手势识别器",
-        "link": "#内置手势识别器",
-        "children": [
-          {
-            "level": 3,
-            "title": "TapGesture",
-            "slug": "tapgesture",
-            "link": "#tapgesture",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "LongPressGesture",
-            "slug": "longpressgesture",
-            "link": "#longpressgesture",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "DragGesture",
-            "slug": "draggesture",
-            "link": "#draggesture",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "MagnificationGesture",
-            "slug": "magnificationgesture",
-            "link": "#magnificationgesture",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "RotationGesture",
-            "slug": "rotationgesture",
-            "link": "#rotationgesture",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "自定义手势识别器",
-        "slug": "自定义手势识别器",
-        "link": "#自定义手势识别器",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "simultaneousGesture",
-        "slug": "simultaneousgesture",
-        "link": "#simultaneousgesture",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "sequenced",
-        "slug": "sequenced",
-        "link": "#sequenced",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "exclusiveGesture",
-        "slug": "exclusivegesture",
-        "link": "#exclusivegesture",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "交互动画",
-        "slug": "交互动画",
-        "link": "#交互动画",
-        "children": [
-          {
-            "level": 3,
-            "title": "点击缩放",
-            "slug": "点击缩放",
-            "link": "#点击缩放",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "拖拽移动",
-            "slug": "拖拽移动",
-            "link": "#拖拽移动",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/10.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "11.容器视图",
-    "headers": [
-      {
-        "level": 2,
-        "title": "常见的容器视图",
-        "slug": "常见的容器视图",
-        "link": "#常见的容器视图",
-        "children": [
-          {
-            "level": 3,
-            "title": "VStack 和 HStack",
-            "slug": "vstack-和-hstack",
-            "link": "#vstack-和-hstack",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "ZStack",
-            "slug": "zstack",
-            "link": "#zstack",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "ScrollView",
-            "slug": "scrollview",
-            "link": "#scrollview",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "List",
-            "slug": "list",
-            "link": "#list",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Form",
-            "slug": "form",
-            "link": "#form",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "如何使用容器视图",
-        "slug": "如何使用容器视图",
-        "link": "#如何使用容器视图",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/11.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "12.导航视图",
-    "headers": [
-      {
-        "level": 2,
-        "title": "导航视图的基础",
-        "slug": "导航视图的基础",
-        "link": "#导航视图的基础",
-        "children": [
-          {
-            "level": 3,
-            "title": "NavigationView",
-            "slug": "navigationview",
-            "link": "#navigationview",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "NavigationLink",
-            "slug": "navigationlink",
-            "link": "#navigationlink",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "导航视图的高级用法",
-        "slug": "导航视图的高级用法",
-        "link": "#导航视图的高级用法",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "总结",
-        "slug": "总结",
-        "link": "#总结",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/12.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "13.列表视图",
-    "headers": [
-      {
-        "level": 2,
-        "title": "List 组件",
-        "slug": "list-组件",
-        "link": "#list-组件",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "ForEach 组件",
-        "slug": "foreach-组件",
-        "link": "#foreach-组件",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "列表视图的高级用法",
-        "slug": "列表视图的高级用法",
-        "link": "#列表视图的高级用法",
-        "children": [
-          {
-            "level": 3,
-            "title": "滚动到指定位置",
-            "slug": "滚动到指定位置",
-            "link": "#滚动到指定位置",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "滑动删除",
-            "slug": "滑动删除",
-            "link": "#滑动删除",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "拖放排序",
-            "slug": "拖放排序",
-            "link": "#拖放排序",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "总结",
-        "slug": "总结",
-        "link": "#总结",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/13.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "14.表单视图",
-    "headers": [
-      {
-        "level": 2,
-        "title": "创建表单视图",
-        "slug": "创建表单视图",
-        "link": "#创建表单视图",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "表单元素",
-        "slug": "表单元素",
-        "link": "#表单元素",
-        "children": [
-          {
-            "level": 3,
-            "title": "文本字段",
-            "slug": "文本字段",
-            "link": "#文本字段",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "开关",
-            "slug": "开关",
-            "link": "#开关",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "选择器",
-            "slug": "选择器",
-            "link": "#选择器",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "按钮",
-            "slug": "按钮",
-            "link": "#按钮",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/14.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "15.数据模型和数据管理",
-    "headers": [
-      {
-        "level": 2,
-        "title": "数据模型",
-        "slug": "数据模型",
-        "link": "#数据模型",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "数据管理",
-        "slug": "数据管理",
-        "link": "#数据管理",
-        "children": [
-          {
-            "level": 3,
-            "title": "@State",
-            "slug": "state",
-            "link": "#state",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "@ObservedObject",
-            "slug": "observedobject",
-            "link": "#observedobject",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "@EnvironmentObject",
-            "slug": "environmentobject",
-            "link": "#environmentobject",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "结论",
-        "slug": "结论",
-        "link": "#结论",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/15.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "16.网络请求和数据解析",
-    "headers": [
-      {
-        "level": 2,
-        "title": "发送网络请求",
-        "slug": "发送网络请求",
-        "link": "#发送网络请求",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "解析JSON数据",
-        "slug": "解析json数据",
-        "link": "#解析json数据",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "处理错误",
-        "slug": "处理错误",
-        "link": "#处理错误",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "总结",
-        "slug": "总结",
-        "link": "#总结",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/16.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "02.项目初始化",
-    "headers": [
-      {
-        "level": 2,
-        "title": "创建项目",
-        "slug": "创建项目",
-        "link": "#创建项目",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "应用程序的基本结构",
-        "slug": "应用程序的基本结构",
-        "link": "#应用程序的基本结构",
-        "children": [
-          {
-            "level": 3,
-            "title": "应用程序的入口点",
-            "slug": "应用程序的入口点",
-            "link": "#应用程序的入口点",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "应用程序场景",
-            "slug": "应用程序场景",
-            "link": "#应用程序场景",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "应用程序视图",
-            "slug": "应用程序视图",
-            "link": "#应用程序视图",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "总结",
-        "slug": "总结",
-        "link": "#总结",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/2.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "03.视图结构",
-    "headers": [
-      {
-        "level": 2,
-        "title": "视图结构",
-        "slug": "视图结构",
-        "link": "#视图结构",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "组合方式",
-        "slug": "组合方式",
-        "link": "#组合方式",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/3.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "04.状态管理和数据绑定",
-    "headers": [
-      {
-        "level": 2,
-        "title": "状态管理",
-        "slug": "状态管理",
-        "link": "#状态管理",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "数据绑定",
-        "slug": "数据绑定",
-        "link": "#数据绑定",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "总结",
-        "slug": "总结",
-        "link": "#总结",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/4.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "05.基本视图类型",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Text",
-        "slug": "text",
-        "link": "#text",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Image",
-        "slug": "image",
-        "link": "#image",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Button",
-        "slug": "button",
-        "link": "#button",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "TextField",
-        "slug": "textfield",
-        "link": "#textfield",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Toggle",
-        "slug": "toggle",
-        "link": "#toggle",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Spacer",
-        "slug": "spacer",
-        "link": "#spacer",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "总结",
-        "slug": "总结",
-        "link": "#总结",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/5.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "06.布局",
-    "headers": [
-      {
-        "level": 2,
-        "title": "布局",
-        "slug": "布局",
-        "link": "#布局",
-        "children": [
-          {
-            "level": 3,
-            "title": "HStack",
-            "slug": "hstack",
-            "link": "#hstack",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "VStack",
-            "slug": "vstack",
-            "link": "#vstack",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "ZStack",
-            "slug": "zstack",
-            "link": "#zstack",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "布局修饰符",
-        "slug": "布局修饰符",
-        "link": "#布局修饰符",
-        "children": [
-          {
-            "level": 3,
-            "title": "frame",
-            "slug": "frame",
-            "link": "#frame",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "padding",
-            "slug": "padding",
-            "link": "#padding",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "background",
-            "slug": "background",
-            "link": "#background",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/6.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "07.自定义视图和容器",
-    "headers": [
-      {
-        "level": 2,
-        "title": "自定义视图",
-        "slug": "自定义视图",
-        "link": "#自定义视图",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "自定义容器",
-        "slug": "自定义容器",
-        "link": "#自定义容器",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "总结",
-        "slug": "总结",
-        "link": "#总结",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/7.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "08.基本动画类型",
-    "headers": [
-      {
-        "level": 2,
-        "title": "动画类型",
-        "slug": "动画类型",
-        "link": "#动画类型",
-        "children": [
-          {
-            "level": 3,
-            "title": "Opacity",
-            "slug": "opacity",
-            "link": "#opacity",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Scale",
-            "slug": "scale",
-            "link": "#scale",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Offset",
-            "slug": "offset",
-            "link": "#offset",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Rotation",
-            "slug": "rotation",
-            "link": "#rotation",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "动画选项",
-        "slug": "动画选项",
-        "link": "#动画选项",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "自定义动画",
-        "slug": "自定义动画",
-        "link": "#自定义动画",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/8.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "09.过渡动画",
-    "headers": [
-      {
-        "level": 2,
-        "title": "系统过渡动画",
-        "slug": "系统过渡动画",
-        "link": "#系统过渡动画",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "自定义过渡动画",
-        "slug": "自定义过渡动画",
-        "link": "#自定义过渡动画",
-        "children": [
-          {
-            "level": 3,
-            "title": "创建过渡动画",
-            "slug": "创建过渡动画",
-            "link": "#创建过渡动画",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "使用自定义过渡动画",
-            "slug": "使用自定义过渡动画",
-            "link": "#使用自定义过渡动画",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/9.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "数组、集合、元祖、字典",
     "headers": [
       {
@@ -2342,6 +1529,819 @@ export const searchIndex = [
       }
     ],
     "path": "/%E5%BC%80%E5%8F%91/%E3%80%8EVue%E3%80%8F/7.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "00.官方教程读后记录",
+    "headers": [
+      {
+        "level": 2,
+        "title": "官方教程",
+        "slug": "官方教程",
+        "link": "#官方教程",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/0.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "01.概述",
+    "headers": [
+      {
+        "level": 2,
+        "title": "声明式语法",
+        "slug": "声明式语法",
+        "link": "#声明式语法",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "自动化布局",
+        "slug": "自动化布局",
+        "link": "#自动化布局",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "数据驱动界面",
+        "slug": "数据驱动界面",
+        "link": "#数据驱动界面",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "可组合性",
+        "slug": "可组合性",
+        "link": "#可组合性",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "实时预览",
+        "slug": "实时预览",
+        "link": "#实时预览",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/1.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "10.手势",
+    "headers": [
+      {
+        "level": 2,
+        "title": "内置手势识别器",
+        "slug": "内置手势识别器",
+        "link": "#内置手势识别器",
+        "children": [
+          {
+            "level": 3,
+            "title": "TapGesture",
+            "slug": "tapgesture",
+            "link": "#tapgesture",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "LongPressGesture",
+            "slug": "longpressgesture",
+            "link": "#longpressgesture",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "DragGesture",
+            "slug": "draggesture",
+            "link": "#draggesture",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "MagnificationGesture",
+            "slug": "magnificationgesture",
+            "link": "#magnificationgesture",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "RotationGesture",
+            "slug": "rotationgesture",
+            "link": "#rotationgesture",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "自定义手势识别器",
+        "slug": "自定义手势识别器",
+        "link": "#自定义手势识别器",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "simultaneousGesture",
+        "slug": "simultaneousgesture",
+        "link": "#simultaneousgesture",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "sequenced",
+        "slug": "sequenced",
+        "link": "#sequenced",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "exclusiveGesture",
+        "slug": "exclusivegesture",
+        "link": "#exclusivegesture",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "交互动画",
+        "slug": "交互动画",
+        "link": "#交互动画",
+        "children": [
+          {
+            "level": 3,
+            "title": "点击缩放",
+            "slug": "点击缩放",
+            "link": "#点击缩放",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "拖拽移动",
+            "slug": "拖拽移动",
+            "link": "#拖拽移动",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/10.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "11.容器视图",
+    "headers": [
+      {
+        "level": 2,
+        "title": "常见的容器视图",
+        "slug": "常见的容器视图",
+        "link": "#常见的容器视图",
+        "children": [
+          {
+            "level": 3,
+            "title": "VStack 和 HStack",
+            "slug": "vstack-和-hstack",
+            "link": "#vstack-和-hstack",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "ZStack",
+            "slug": "zstack",
+            "link": "#zstack",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "ScrollView",
+            "slug": "scrollview",
+            "link": "#scrollview",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "List",
+            "slug": "list",
+            "link": "#list",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Form",
+            "slug": "form",
+            "link": "#form",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "如何使用容器视图",
+        "slug": "如何使用容器视图",
+        "link": "#如何使用容器视图",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/11.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "12.导航视图",
+    "headers": [
+      {
+        "level": 2,
+        "title": "导航视图的基础",
+        "slug": "导航视图的基础",
+        "link": "#导航视图的基础",
+        "children": [
+          {
+            "level": 3,
+            "title": "NavigationView",
+            "slug": "navigationview",
+            "link": "#navigationview",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "NavigationLink",
+            "slug": "navigationlink",
+            "link": "#navigationlink",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "导航视图的高级用法",
+        "slug": "导航视图的高级用法",
+        "link": "#导航视图的高级用法",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/12.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "13.列表视图",
+    "headers": [
+      {
+        "level": 2,
+        "title": "List 组件",
+        "slug": "list-组件",
+        "link": "#list-组件",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "ForEach 组件",
+        "slug": "foreach-组件",
+        "link": "#foreach-组件",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "列表视图的高级用法",
+        "slug": "列表视图的高级用法",
+        "link": "#列表视图的高级用法",
+        "children": [
+          {
+            "level": 3,
+            "title": "滚动到指定位置",
+            "slug": "滚动到指定位置",
+            "link": "#滚动到指定位置",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "滑动删除",
+            "slug": "滑动删除",
+            "link": "#滑动删除",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "拖放排序",
+            "slug": "拖放排序",
+            "link": "#拖放排序",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/13.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "14.表单视图",
+    "headers": [
+      {
+        "level": 2,
+        "title": "创建表单视图",
+        "slug": "创建表单视图",
+        "link": "#创建表单视图",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "表单元素",
+        "slug": "表单元素",
+        "link": "#表单元素",
+        "children": [
+          {
+            "level": 3,
+            "title": "文本字段",
+            "slug": "文本字段",
+            "link": "#文本字段",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "开关",
+            "slug": "开关",
+            "link": "#开关",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "选择器",
+            "slug": "选择器",
+            "link": "#选择器",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "按钮",
+            "slug": "按钮",
+            "link": "#按钮",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/14.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "15.数据模型和数据管理",
+    "headers": [
+      {
+        "level": 2,
+        "title": "数据模型",
+        "slug": "数据模型",
+        "link": "#数据模型",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "数据管理",
+        "slug": "数据管理",
+        "link": "#数据管理",
+        "children": [
+          {
+            "level": 3,
+            "title": "@State",
+            "slug": "state",
+            "link": "#state",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "@ObservedObject",
+            "slug": "observedobject",
+            "link": "#observedobject",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "@EnvironmentObject",
+            "slug": "environmentobject",
+            "link": "#environmentobject",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "结论",
+        "slug": "结论",
+        "link": "#结论",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/15.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "16.网络请求和数据解析",
+    "headers": [
+      {
+        "level": 2,
+        "title": "发送网络请求",
+        "slug": "发送网络请求",
+        "link": "#发送网络请求",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "解析JSON数据",
+        "slug": "解析json数据",
+        "link": "#解析json数据",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "处理错误",
+        "slug": "处理错误",
+        "link": "#处理错误",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/16.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "02.项目初始化",
+    "headers": [
+      {
+        "level": 2,
+        "title": "创建项目",
+        "slug": "创建项目",
+        "link": "#创建项目",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "应用程序的基本结构",
+        "slug": "应用程序的基本结构",
+        "link": "#应用程序的基本结构",
+        "children": [
+          {
+            "level": 3,
+            "title": "应用程序的入口点",
+            "slug": "应用程序的入口点",
+            "link": "#应用程序的入口点",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "应用程序场景",
+            "slug": "应用程序场景",
+            "link": "#应用程序场景",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "应用程序视图",
+            "slug": "应用程序视图",
+            "link": "#应用程序视图",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/2.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "03.视图结构",
+    "headers": [
+      {
+        "level": 2,
+        "title": "视图结构",
+        "slug": "视图结构",
+        "link": "#视图结构",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "组合方式",
+        "slug": "组合方式",
+        "link": "#组合方式",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "04.状态管理和数据绑定",
+    "headers": [
+      {
+        "level": 2,
+        "title": "状态管理",
+        "slug": "状态管理",
+        "link": "#状态管理",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "数据绑定",
+        "slug": "数据绑定",
+        "link": "#数据绑定",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/4.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "05.基本视图类型",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Text",
+        "slug": "text",
+        "link": "#text",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Image",
+        "slug": "image",
+        "link": "#image",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Button",
+        "slug": "button",
+        "link": "#button",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "TextField",
+        "slug": "textfield",
+        "link": "#textfield",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Toggle",
+        "slug": "toggle",
+        "link": "#toggle",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Spacer",
+        "slug": "spacer",
+        "link": "#spacer",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/5.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "06.布局",
+    "headers": [
+      {
+        "level": 2,
+        "title": "布局",
+        "slug": "布局",
+        "link": "#布局",
+        "children": [
+          {
+            "level": 3,
+            "title": "HStack",
+            "slug": "hstack",
+            "link": "#hstack",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "VStack",
+            "slug": "vstack",
+            "link": "#vstack",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "ZStack",
+            "slug": "zstack",
+            "link": "#zstack",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "布局修饰符",
+        "slug": "布局修饰符",
+        "link": "#布局修饰符",
+        "children": [
+          {
+            "level": 3,
+            "title": "frame",
+            "slug": "frame",
+            "link": "#frame",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "padding",
+            "slug": "padding",
+            "link": "#padding",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "background",
+            "slug": "background",
+            "link": "#background",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/6.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "07.自定义视图和容器",
+    "headers": [
+      {
+        "level": 2,
+        "title": "自定义视图",
+        "slug": "自定义视图",
+        "link": "#自定义视图",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "自定义容器",
+        "slug": "自定义容器",
+        "link": "#自定义容器",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/7.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "08.基本动画类型",
+    "headers": [
+      {
+        "level": 2,
+        "title": "动画类型",
+        "slug": "动画类型",
+        "link": "#动画类型",
+        "children": [
+          {
+            "level": 3,
+            "title": "Opacity",
+            "slug": "opacity",
+            "link": "#opacity",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Scale",
+            "slug": "scale",
+            "link": "#scale",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Offset",
+            "slug": "offset",
+            "link": "#offset",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Rotation",
+            "slug": "rotation",
+            "link": "#rotation",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "动画选项",
+        "slug": "动画选项",
+        "link": "#动画选项",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "自定义动画",
+        "slug": "自定义动画",
+        "link": "#自定义动画",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/8.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "09.过渡动画",
+    "headers": [
+      {
+        "level": 2,
+        "title": "系统过渡动画",
+        "slug": "系统过渡动画",
+        "link": "#系统过渡动画",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "自定义过渡动画",
+        "slug": "自定义过渡动画",
+        "link": "#自定义过渡动画",
+        "children": [
+          {
+            "level": 3,
+            "title": "创建过渡动画",
+            "slug": "创建过渡动画",
+            "link": "#创建过渡动画",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "使用自定义过渡动画",
+            "slug": "使用自定义过渡动画",
+            "link": "#使用自定义过渡动画",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/9.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -4364,13 +4364,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "『 Swift U I』",
-    "headers": [],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "『 Swift』",
     "headers": [],
     "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/",
@@ -4381,6 +4374,13 @@ export const searchIndex = [
     "title": "『 Vue』",
     "headers": [],
     "path": "/%E5%BC%80%E5%8F%91/%E3%80%8EVue%E3%80%8F/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "『 Swift U I』",
+    "headers": [],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/",
     "pathLocale": "/",
     "extraFields": []
   },
