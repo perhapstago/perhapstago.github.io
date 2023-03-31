@@ -527,1005 +527,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "一些记录",
-    "headers": [],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8EVue%E3%80%8F/0.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "简介和基本结构",
-    "headers": [
-      {
-        "level": 2,
-        "title": "简介",
-        "slug": "简介",
-        "link": "#简介",
-        "children": [
-          {
-            "level": 3,
-            "title": "数据驱动视图",
-            "slug": "数据驱动视图",
-            "link": "#数据驱动视图",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "核心概念",
-            "slug": "核心概念",
-            "link": "#核心概念",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "基本结构",
-        "slug": "基本结构",
-        "link": "#基本结构",
-        "children": [
-          {
-            "level": 3,
-            "title": "Vue实例",
-            "slug": "vue实例",
-            "link": "#vue实例",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "模板",
-            "slug": "模板",
-            "link": "#模板",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "组件",
-            "slug": "组件",
-            "link": "#组件",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "生命周期",
-            "slug": "生命周期",
-            "link": "#生命周期",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8EVue%E3%80%8F/1.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "事件处理",
-    "headers": [
-      {
-        "level": 2,
-        "title": "事件绑定",
-        "slug": "事件绑定",
-        "link": "#事件绑定",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "事件修饰符",
-        "slug": "事件修饰符",
-        "link": "#事件修饰符",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "事件对象",
-        "slug": "事件对象",
-        "link": "#事件对象",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "自定义事件",
-        "slug": "自定义事件",
-        "link": "#自定义事件",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "总结",
-        "slug": "总结",
-        "link": "#总结",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8EVue%E3%80%8F/2.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "计算属性",
-    "headers": [
-      {
-        "level": 2,
-        "title": "什么是计算属性？",
-        "slug": "什么是计算属性",
-        "link": "#什么是计算属性",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "计算属性的用法",
-        "slug": "计算属性的用法",
-        "link": "#计算属性的用法",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "语法",
-        "slug": "语法",
-        "link": "#语法",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "使用场景",
-        "slug": "使用场景",
-        "link": "#使用场景",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "实践要点",
-        "slug": "实践要点",
-        "link": "#实践要点",
-        "children": [
-          {
-            "level": 3,
-            "title": "将复杂的逻辑放入计算属性",
-            "slug": "将复杂的逻辑放入计算属性",
-            "link": "#将复杂的逻辑放入计算属性",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "避免在计算属性中修改数据",
-            "slug": "避免在计算属性中修改数据",
-            "link": "#避免在计算属性中修改数据",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "计算属性要具有可读性",
-            "slug": "计算属性要具有可读性",
-            "link": "#计算属性要具有可读性",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "计算属性 vs 方法",
-        "slug": "计算属性-vs-方法",
-        "link": "#计算属性-vs-方法",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "总结",
-        "slug": "总结",
-        "link": "#总结",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8EVue%E3%80%8F/3.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "插槽",
-    "headers": [
-      {
-        "level": 2,
-        "title": "基本用法",
-        "slug": "基本用法",
-        "link": "#基本用法",
-        "children": [
-          {
-            "level": 3,
-            "title": "默认插槽",
-            "slug": "默认插槽",
-            "link": "#默认插槽",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "具名插槽",
-            "slug": "具名插槽",
-            "link": "#具名插槽",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "作用域插槽",
-            "slug": "作用域插槽",
-            "link": "#作用域插槽",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "插槽的高级用法",
-        "slug": "插槽的高级用法",
-        "link": "#插槽的高级用法",
-        "children": [
-          {
-            "level": 3,
-            "title": "动态插槽",
-            "slug": "动态插槽",
-            "link": "#动态插槽",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "动态组件",
-            "slug": "动态组件",
-            "link": "#动态组件",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "总结",
-        "slug": "总结",
-        "link": "#总结",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8EVue%E3%80%8F/4.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "生命周期",
-    "headers": [
-      {
-        "level": 2,
-        "title": "钩子函数执行顺序",
-        "slug": "钩子函数执行顺序",
-        "link": "#钩子函数执行顺序",
-        "children": [
-          {
-            "level": 3,
-            "title": "创建阶段",
-            "slug": "创建阶段",
-            "link": "#创建阶段",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "挂载阶段",
-            "slug": "挂载阶段",
-            "link": "#挂载阶段",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "更新阶段",
-            "slug": "更新阶段",
-            "link": "#更新阶段",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "销毁阶段",
-            "slug": "销毁阶段",
-            "link": "#销毁阶段",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "实际应用",
-        "slug": "实际应用",
-        "link": "#实际应用",
-        "children": [
-          {
-            "level": 3,
-            "title": "beforeCreate",
-            "slug": "beforecreate",
-            "link": "#beforecreate",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "created",
-            "slug": "created",
-            "link": "#created",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "ounted",
-            "slug": "ounted",
-            "link": "#ounted",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "beforeUpdate",
-            "slug": "beforeupdate",
-            "link": "#beforeupdate",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "updated",
-            "slug": "updated",
-            "link": "#updated",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "beforeDestroy",
-            "slug": "beforedestroy",
-            "link": "#beforedestroy",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "destroyed",
-            "slug": "destroyed",
-            "link": "#destroyed",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8EVue%E3%80%8F/5.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "指令",
-    "headers": [
-      {
-        "level": 2,
-        "title": "内置指令",
-        "slug": "内置指令",
-        "link": "#内置指令",
-        "children": [
-          {
-            "level": 3,
-            "title": "v-if 和 v-show",
-            "slug": "v-if-和-v-show",
-            "link": "#v-if-和-v-show",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "v-for",
-            "slug": "v-for",
-            "link": "#v-for",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "v-bind",
-            "slug": "v-bind",
-            "link": "#v-bind",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "v-on",
-            "slug": "v-on",
-            "link": "#v-on",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "自定义指令",
-        "slug": "自定义指令",
-        "link": "#自定义指令",
-        "children": [
-          {
-            "level": 3,
-            "title": "注册自定义指令",
-            "slug": "注册自定义指令",
-            "link": "#注册自定义指令",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "生命周期钩子函数",
-            "slug": "生命周期钩子函数",
-            "link": "#生命周期钩子函数",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "钩子函数的参数",
-            "slug": "钩子函数的参数",
-            "link": "#钩子函数的参数",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "钩子函数示例",
-            "slug": "钩子函数示例",
-            "link": "#钩子函数示例",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "总结",
-        "slug": "总结",
-        "link": "#总结",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8EVue%E3%80%8F/6.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "数据共享",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Props",
-        "slug": "props",
-        "link": "#props",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "$emit",
-        "slug": "emit",
-        "link": "#emit",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "EventBus",
-        "slug": "eventbus",
-        "link": "#eventbus",
-        "children": [
-          {
-            "level": 3,
-            "title": "创建 EventBus",
-            "slug": "创建-eventbus",
-            "link": "#创建-eventbus",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "发送事件",
-            "slug": "发送事件",
-            "link": "#发送事件",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "监听事件",
-            "slug": "监听事件",
-            "link": "#监听事件",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8EVue%E3%80%8F/7.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "数组、集合、元祖、字典",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Array (数组)",
-        "slug": "array-数组",
-        "link": "#array-数组",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Set (集合)",
-        "slug": "set-集合",
-        "link": "#set-集合",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "元祖 (Tuple)",
-        "slug": "元祖-tuple",
-        "link": "#元祖-tuple",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "字典 (字典)",
-        "slug": "字典-字典",
-        "link": "#字典-字典",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "初始化",
-        "slug": "初始化",
-        "link": "#初始化",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "数组 vs 集合 vs 元组 vs 字典",
-        "slug": "数组-vs-集合-vs-元组-vs-字典",
-        "link": "#数组-vs-集合-vs-元组-vs-字典",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/1.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "SwiftLint 基本用法",
-    "headers": [
-      {
-        "level": 2,
-        "title": "convenience",
-        "slug": "convenience",
-        "link": "#convenience",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "空数量",
-        "slug": "空数量",
-        "link": "#空数量",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "空字符串",
-        "slug": "空字符串",
-        "link": "#空字符串",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "fatalError",
-        "slug": "fatalerror",
-        "link": "#fatalerror",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "first(where:)",
-        "slug": "first-where",
-        "link": "#first-where",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "文件名称",
-        "slug": "文件名称",
-        "link": "#文件名称",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "修改器顺序",
-        "slug": "修改器顺序",
-        "link": "#修改器顺序",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "禁止Xib",
-        "slug": "禁止xib",
-        "link": "#禁止xib",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "未使用的私人声明",
-        "slug": "未使用的私人声明",
-        "link": "#未使用的私人声明",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "其他规则",
-        "slug": "其他规则",
-        "link": "#其他规则",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/10.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "required",
-    "headers": [],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/11.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "weak self、unowned self",
-    "headers": [
-      {
-        "level": 2,
-        "title": "ARC、retain、release",
-        "slug": "arc、retain、release",
-        "link": "#arc、retain、release",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "何时使用 weak self",
-        "slug": "何时使用-weak-self",
-        "link": "#何时使用-weak-self",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "弱引用、循环引用",
-        "slug": "弱引用、循环引用",
-        "link": "#弱引用、循环引用",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "何时使用 unowned self",
-        "slug": "何时使用-unowned-self",
-        "link": "#何时使用-unowned-self",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "为什么不需要结构体这样的值类型？",
-        "slug": "为什么不需要结构体这样的值类型",
-        "link": "#为什么不需要结构体这样的值类型",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "weak和unowned只与inside closures一起使用吗？",
-        "slug": "weak和unowned只与inside-closures一起使用吗",
-        "link": "#weak和unowned只与inside-closures一起使用吗",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/12.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "闭包",
-    "headers": [
-      {
-        "level": 2,
-        "title": "创建基本闭包",
-        "slug": "创建基本闭包",
-        "link": "#创建基本闭包",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "闭包参数",
-        "slug": "闭包参数",
-        "link": "#闭包参数",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "闭包返回值",
-        "slug": "闭包返回值",
-        "link": "#闭包返回值",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "闭合作为参数",
-        "slug": "闭合作为参数",
-        "link": "#闭合作为参数",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "尾随闭包",
-        "slug": "尾随闭包",
-        "link": "#尾随闭包",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "多参数闭包",
-        "slug": "多参数闭包",
-        "link": "#多参数闭包",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "函数返回闭包",
-        "slug": "函数返回闭包",
-        "link": "#函数返回闭包",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/2.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "协议和扩展",
-    "headers": [
-      {
-        "level": 2,
-        "title": "协议 (Protocol)",
-        "slug": "协议-protocol",
-        "link": "#协议-protocol",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "协议继承",
-        "slug": "协议继承",
-        "link": "#协议继承",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "扩展 (Extension)",
-        "slug": "扩展-extension",
-        "link": "#扩展-extension",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "协议扩展",
-        "slug": "协议扩展",
-        "link": "#协议扩展",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "面向协议编程",
-        "slug": "面向协议编程",
-        "link": "#面向协议编程",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/3.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "可选类型",
-    "headers": [
-      {
-        "level": 2,
-        "title": "处理丢失数据",
-        "slug": "处理丢失数据",
-        "link": "#处理丢失数据",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "可选类型解包",
-        "slug": "可选类型解包",
-        "link": "#可选类型解包",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "guard let",
-        "slug": "guard-let",
-        "link": "#guard-let",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "强制解包",
-        "slug": "强制解包",
-        "link": "#强制解包",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "隐式拆包可选类型",
-        "slug": "隐式拆包可选类型",
-        "link": "#隐式拆包可选类型",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "nil 合并解包",
-        "slug": "nil-合并解包",
-        "link": "#nil-合并解包",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "可选类型链",
-        "slug": "可选类型链",
-        "link": "#可选类型链",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "抛出函数的try",
-        "slug": "抛出函数的try",
-        "link": "#抛出函数的try",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "可失败的初始化",
-        "slug": "可失败的初始化",
-        "link": "#可失败的初始化",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "类型选择 (Typecasting)",
-        "slug": "类型选择-typecasting",
-        "link": "#类型选择-typecasting",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/4.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "as，as?，as!",
-    "headers": [
-      {
-        "level": 2,
-        "title": "as?和as!是运行时操作",
-        "slug": "as-和as-是运行时操作",
-        "link": "#as-和as-是运行时操作",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "as编译时执行类型强制",
-        "slug": "as编译时执行类型强制",
-        "link": "#as编译时执行类型强制",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "在模式匹配中，as运行时操作一样",
-        "slug": "在模式匹配中-as运行时操作一样",
-        "link": "#在模式匹配中-as运行时操作一样",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "对比举例",
-        "slug": "对比举例",
-        "link": "#对比举例",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/5.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Equatable",
-    "headers": [],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/6.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "类型推断",
-    "headers": [],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/7.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "defer",
-    "headers": [
-      {
-        "level": 2,
-        "title": "defer语句",
-        "slug": "defer语句",
-        "link": "#defer语句",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "多个defer语句的执行顺序",
-        "slug": "多个defer语句的执行顺序",
-        "link": "#多个defer语句的执行顺序",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "常见的用例",
-        "slug": "常见的用例",
-        "link": "#常见的用例",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "确保回调",
-        "slug": "确保回调",
-        "link": "#确保回调",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/8.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "where",
-    "headers": [
-      {
-        "level": 2,
-        "title": "switch中使用",
-        "slug": "switch中使用",
-        "link": "#switch中使用",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "for循环中的使用",
-        "slug": "for循环中的使用",
-        "link": "#for循环中的使用",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "协议扩展中的使用",
-        "slug": "协议扩展中的使用",
-        "link": "#协议扩展中的使用",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "first元素筛选的使用",
-        "slug": "first元素筛选的使用",
-        "link": "#first元素筛选的使用",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "contains筛选的使用",
-        "slug": "contains筛选的使用",
-        "link": "#contains筛选的使用",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "初始化中的使用",
-        "slug": "初始化中的使用",
-        "link": "#初始化中的使用",
-        "children": []
-      }
-    ],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/9.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "00.官方教程读后记录",
     "headers": [
       {
@@ -2335,6 +1336,1005 @@ export const searchIndex = [
       }
     ],
     "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/9.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "数组、集合、元祖、字典",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Array (数组)",
+        "slug": "array-数组",
+        "link": "#array-数组",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Set (集合)",
+        "slug": "set-集合",
+        "link": "#set-集合",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "元祖 (Tuple)",
+        "slug": "元祖-tuple",
+        "link": "#元祖-tuple",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "字典 (字典)",
+        "slug": "字典-字典",
+        "link": "#字典-字典",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "初始化",
+        "slug": "初始化",
+        "link": "#初始化",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "数组 vs 集合 vs 元组 vs 字典",
+        "slug": "数组-vs-集合-vs-元组-vs-字典",
+        "link": "#数组-vs-集合-vs-元组-vs-字典",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/1.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "SwiftLint 基本用法",
+    "headers": [
+      {
+        "level": 2,
+        "title": "convenience",
+        "slug": "convenience",
+        "link": "#convenience",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "空数量",
+        "slug": "空数量",
+        "link": "#空数量",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "空字符串",
+        "slug": "空字符串",
+        "link": "#空字符串",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "fatalError",
+        "slug": "fatalerror",
+        "link": "#fatalerror",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "first(where:)",
+        "slug": "first-where",
+        "link": "#first-where",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "文件名称",
+        "slug": "文件名称",
+        "link": "#文件名称",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "修改器顺序",
+        "slug": "修改器顺序",
+        "link": "#修改器顺序",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "禁止Xib",
+        "slug": "禁止xib",
+        "link": "#禁止xib",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "未使用的私人声明",
+        "slug": "未使用的私人声明",
+        "link": "#未使用的私人声明",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "其他规则",
+        "slug": "其他规则",
+        "link": "#其他规则",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/10.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "required",
+    "headers": [],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/11.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "weak self、unowned self",
+    "headers": [
+      {
+        "level": 2,
+        "title": "ARC、retain、release",
+        "slug": "arc、retain、release",
+        "link": "#arc、retain、release",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "何时使用 weak self",
+        "slug": "何时使用-weak-self",
+        "link": "#何时使用-weak-self",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "弱引用、循环引用",
+        "slug": "弱引用、循环引用",
+        "link": "#弱引用、循环引用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "何时使用 unowned self",
+        "slug": "何时使用-unowned-self",
+        "link": "#何时使用-unowned-self",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "为什么不需要结构体这样的值类型？",
+        "slug": "为什么不需要结构体这样的值类型",
+        "link": "#为什么不需要结构体这样的值类型",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "weak和unowned只与inside closures一起使用吗？",
+        "slug": "weak和unowned只与inside-closures一起使用吗",
+        "link": "#weak和unowned只与inside-closures一起使用吗",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/12.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "闭包",
+    "headers": [
+      {
+        "level": 2,
+        "title": "创建基本闭包",
+        "slug": "创建基本闭包",
+        "link": "#创建基本闭包",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "闭包参数",
+        "slug": "闭包参数",
+        "link": "#闭包参数",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "闭包返回值",
+        "slug": "闭包返回值",
+        "link": "#闭包返回值",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "闭合作为参数",
+        "slug": "闭合作为参数",
+        "link": "#闭合作为参数",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "尾随闭包",
+        "slug": "尾随闭包",
+        "link": "#尾随闭包",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "多参数闭包",
+        "slug": "多参数闭包",
+        "link": "#多参数闭包",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "函数返回闭包",
+        "slug": "函数返回闭包",
+        "link": "#函数返回闭包",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/2.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "协议和扩展",
+    "headers": [
+      {
+        "level": 2,
+        "title": "协议 (Protocol)",
+        "slug": "协议-protocol",
+        "link": "#协议-protocol",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "协议继承",
+        "slug": "协议继承",
+        "link": "#协议继承",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "扩展 (Extension)",
+        "slug": "扩展-extension",
+        "link": "#扩展-extension",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "协议扩展",
+        "slug": "协议扩展",
+        "link": "#协议扩展",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "面向协议编程",
+        "slug": "面向协议编程",
+        "link": "#面向协议编程",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "可选类型",
+    "headers": [
+      {
+        "level": 2,
+        "title": "处理丢失数据",
+        "slug": "处理丢失数据",
+        "link": "#处理丢失数据",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "可选类型解包",
+        "slug": "可选类型解包",
+        "link": "#可选类型解包",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "guard let",
+        "slug": "guard-let",
+        "link": "#guard-let",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "强制解包",
+        "slug": "强制解包",
+        "link": "#强制解包",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "隐式拆包可选类型",
+        "slug": "隐式拆包可选类型",
+        "link": "#隐式拆包可选类型",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "nil 合并解包",
+        "slug": "nil-合并解包",
+        "link": "#nil-合并解包",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "可选类型链",
+        "slug": "可选类型链",
+        "link": "#可选类型链",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "抛出函数的try",
+        "slug": "抛出函数的try",
+        "link": "#抛出函数的try",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "可失败的初始化",
+        "slug": "可失败的初始化",
+        "link": "#可失败的初始化",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "类型选择 (Typecasting)",
+        "slug": "类型选择-typecasting",
+        "link": "#类型选择-typecasting",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/4.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "as，as?，as!",
+    "headers": [
+      {
+        "level": 2,
+        "title": "as?和as!是运行时操作",
+        "slug": "as-和as-是运行时操作",
+        "link": "#as-和as-是运行时操作",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "as编译时执行类型强制",
+        "slug": "as编译时执行类型强制",
+        "link": "#as编译时执行类型强制",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "在模式匹配中，as运行时操作一样",
+        "slug": "在模式匹配中-as运行时操作一样",
+        "link": "#在模式匹配中-as运行时操作一样",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "对比举例",
+        "slug": "对比举例",
+        "link": "#对比举例",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/5.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Equatable",
+    "headers": [],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/6.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "类型推断",
+    "headers": [],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/7.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "defer",
+    "headers": [
+      {
+        "level": 2,
+        "title": "defer语句",
+        "slug": "defer语句",
+        "link": "#defer语句",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "多个defer语句的执行顺序",
+        "slug": "多个defer语句的执行顺序",
+        "link": "#多个defer语句的执行顺序",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "常见的用例",
+        "slug": "常见的用例",
+        "link": "#常见的用例",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "确保回调",
+        "slug": "确保回调",
+        "link": "#确保回调",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/8.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "where",
+    "headers": [
+      {
+        "level": 2,
+        "title": "switch中使用",
+        "slug": "switch中使用",
+        "link": "#switch中使用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "for循环中的使用",
+        "slug": "for循环中的使用",
+        "link": "#for循环中的使用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "协议扩展中的使用",
+        "slug": "协议扩展中的使用",
+        "link": "#协议扩展中的使用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "first元素筛选的使用",
+        "slug": "first元素筛选的使用",
+        "link": "#first元素筛选的使用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "contains筛选的使用",
+        "slug": "contains筛选的使用",
+        "link": "#contains筛选的使用",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "初始化中的使用",
+        "slug": "初始化中的使用",
+        "link": "#初始化中的使用",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwift%E3%80%8F/9.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "一些记录",
+    "headers": [],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8EVue%E3%80%8F/0.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "简介和基本结构",
+    "headers": [
+      {
+        "level": 2,
+        "title": "简介",
+        "slug": "简介",
+        "link": "#简介",
+        "children": [
+          {
+            "level": 3,
+            "title": "数据驱动视图",
+            "slug": "数据驱动视图",
+            "link": "#数据驱动视图",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "核心概念",
+            "slug": "核心概念",
+            "link": "#核心概念",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "基本结构",
+        "slug": "基本结构",
+        "link": "#基本结构",
+        "children": [
+          {
+            "level": 3,
+            "title": "Vue实例",
+            "slug": "vue实例",
+            "link": "#vue实例",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "模板",
+            "slug": "模板",
+            "link": "#模板",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "组件",
+            "slug": "组件",
+            "link": "#组件",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "生命周期",
+            "slug": "生命周期",
+            "link": "#生命周期",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8EVue%E3%80%8F/1.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "事件处理",
+    "headers": [
+      {
+        "level": 2,
+        "title": "事件绑定",
+        "slug": "事件绑定",
+        "link": "#事件绑定",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "事件修饰符",
+        "slug": "事件修饰符",
+        "link": "#事件修饰符",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "事件对象",
+        "slug": "事件对象",
+        "link": "#事件对象",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "自定义事件",
+        "slug": "自定义事件",
+        "link": "#自定义事件",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8EVue%E3%80%8F/2.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "计算属性",
+    "headers": [
+      {
+        "level": 2,
+        "title": "什么是计算属性？",
+        "slug": "什么是计算属性",
+        "link": "#什么是计算属性",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "计算属性的用法",
+        "slug": "计算属性的用法",
+        "link": "#计算属性的用法",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "语法",
+        "slug": "语法",
+        "link": "#语法",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "使用场景",
+        "slug": "使用场景",
+        "link": "#使用场景",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "实践要点",
+        "slug": "实践要点",
+        "link": "#实践要点",
+        "children": [
+          {
+            "level": 3,
+            "title": "将复杂的逻辑放入计算属性",
+            "slug": "将复杂的逻辑放入计算属性",
+            "link": "#将复杂的逻辑放入计算属性",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "避免在计算属性中修改数据",
+            "slug": "避免在计算属性中修改数据",
+            "link": "#避免在计算属性中修改数据",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "计算属性要具有可读性",
+            "slug": "计算属性要具有可读性",
+            "link": "#计算属性要具有可读性",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "计算属性 vs 方法",
+        "slug": "计算属性-vs-方法",
+        "link": "#计算属性-vs-方法",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8EVue%E3%80%8F/3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "插槽",
+    "headers": [
+      {
+        "level": 2,
+        "title": "基本用法",
+        "slug": "基本用法",
+        "link": "#基本用法",
+        "children": [
+          {
+            "level": 3,
+            "title": "默认插槽",
+            "slug": "默认插槽",
+            "link": "#默认插槽",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "具名插槽",
+            "slug": "具名插槽",
+            "link": "#具名插槽",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "作用域插槽",
+            "slug": "作用域插槽",
+            "link": "#作用域插槽",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "插槽的高级用法",
+        "slug": "插槽的高级用法",
+        "link": "#插槽的高级用法",
+        "children": [
+          {
+            "level": 3,
+            "title": "动态插槽",
+            "slug": "动态插槽",
+            "link": "#动态插槽",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "动态组件",
+            "slug": "动态组件",
+            "link": "#动态组件",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8EVue%E3%80%8F/4.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "生命周期",
+    "headers": [
+      {
+        "level": 2,
+        "title": "钩子函数执行顺序",
+        "slug": "钩子函数执行顺序",
+        "link": "#钩子函数执行顺序",
+        "children": [
+          {
+            "level": 3,
+            "title": "创建阶段",
+            "slug": "创建阶段",
+            "link": "#创建阶段",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "挂载阶段",
+            "slug": "挂载阶段",
+            "link": "#挂载阶段",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "更新阶段",
+            "slug": "更新阶段",
+            "link": "#更新阶段",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "销毁阶段",
+            "slug": "销毁阶段",
+            "link": "#销毁阶段",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "实际应用",
+        "slug": "实际应用",
+        "link": "#实际应用",
+        "children": [
+          {
+            "level": 3,
+            "title": "beforeCreate",
+            "slug": "beforecreate",
+            "link": "#beforecreate",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "created",
+            "slug": "created",
+            "link": "#created",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "ounted",
+            "slug": "ounted",
+            "link": "#ounted",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "beforeUpdate",
+            "slug": "beforeupdate",
+            "link": "#beforeupdate",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "updated",
+            "slug": "updated",
+            "link": "#updated",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "beforeDestroy",
+            "slug": "beforedestroy",
+            "link": "#beforedestroy",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "destroyed",
+            "slug": "destroyed",
+            "link": "#destroyed",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8EVue%E3%80%8F/5.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "指令",
+    "headers": [
+      {
+        "level": 2,
+        "title": "内置指令",
+        "slug": "内置指令",
+        "link": "#内置指令",
+        "children": [
+          {
+            "level": 3,
+            "title": "v-if 和 v-show",
+            "slug": "v-if-和-v-show",
+            "link": "#v-if-和-v-show",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "v-for",
+            "slug": "v-for",
+            "link": "#v-for",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "v-bind",
+            "slug": "v-bind",
+            "link": "#v-bind",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "v-on",
+            "slug": "v-on",
+            "link": "#v-on",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "自定义指令",
+        "slug": "自定义指令",
+        "link": "#自定义指令",
+        "children": [
+          {
+            "level": 3,
+            "title": "注册自定义指令",
+            "slug": "注册自定义指令",
+            "link": "#注册自定义指令",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "生命周期钩子函数",
+            "slug": "生命周期钩子函数",
+            "link": "#生命周期钩子函数",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "钩子函数的参数",
+            "slug": "钩子函数的参数",
+            "link": "#钩子函数的参数",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "钩子函数示例",
+            "slug": "钩子函数示例",
+            "link": "#钩子函数示例",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8EVue%E3%80%8F/6.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "数据共享",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Props",
+        "slug": "props",
+        "link": "#props",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "$emit",
+        "slug": "emit",
+        "link": "#emit",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "EventBus",
+        "slug": "eventbus",
+        "link": "#eventbus",
+        "children": [
+          {
+            "level": 3,
+            "title": "创建 EventBus",
+            "slug": "创建-eventbus",
+            "link": "#创建-eventbus",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "发送事件",
+            "slug": "发送事件",
+            "link": "#发送事件",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "监听事件",
+            "slug": "监听事件",
+            "link": "#监听事件",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8EVue%E3%80%8F/7.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -3959,6 +3959,127 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Swift 与 OC",
+    "headers": [
+      {
+        "level": 2,
+        "title": "共同点：",
+        "slug": "共同点",
+        "link": "#共同点",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "swift 优点",
+        "slug": "swift-优点",
+        "link": "#swift-优点",
+        "children": [
+          {
+            "level": 3,
+            "title": "更安全",
+            "slug": "更安全",
+            "link": "#更安全",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "静态类型语言",
+            "slug": "静态类型语言",
+            "link": "#静态类型语言",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "面向XX编程",
+            "slug": "面向xx编程",
+            "link": "#面向xx编程",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "注重值类型",
+            "slug": "注重值类型",
+            "link": "#注重值类型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "语法文件特点",
+            "slug": "语法文件特点",
+            "link": "#语法文件特点",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "可选类型",
+            "slug": "可选类型",
+            "link": "#可选类型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "协议",
+            "slug": "协议",
+            "link": "#协议",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "泛型类型",
+            "slug": "泛型类型",
+            "link": "#泛型类型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "高阶函数",
+            "slug": "高阶函数",
+            "link": "#高阶函数",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "访问权限",
+            "slug": "访问权限",
+            "link": "#访问权限",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "元组",
+            "slug": "元组",
+            "link": "#元组",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "速度快",
+            "slug": "速度快",
+            "link": "#速度快",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "swift 不足点",
+        "slug": "swift-不足点",
+        "link": "#swift-不足点",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "swift 一些细节",
+        "slug": "swift-一些细节",
+        "link": "#swift-一些细节",
+        "children": []
+      }
+    ],
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8EiOS%E3%80%8F/29.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "UI离屏渲染",
     "headers": [
       {
@@ -4357,9 +4478,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "『 Vue』",
+    "title": "『 Swift U I』",
     "headers": [],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8EVue%E3%80%8F/",
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -4371,9 +4492,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "『 Swift U I』",
+    "title": "『 Vue』",
     "headers": [],
-    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8ESwiftUI%E3%80%8F/",
+    "path": "/%E5%BC%80%E5%8F%91/%E3%80%8EVue%E3%80%8F/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -4441,9 +4562,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Vue 分类",
+    "title": "Swift 分类",
     "headers": [],
-    "path": "/category/vue/",
+    "path": "/category/swift/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -4455,9 +4576,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "前端 分类",
+    "title": "SwiftUI 分类",
     "headers": [],
-    "path": "/category/%E5%89%8D%E7%AB%AF/",
+    "path": "/category/swiftui/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -4469,37 +4590,9 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Swift 分类",
+    "title": "Vue 分类",
     "headers": [],
-    "path": "/category/swift/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "生命周期 标签",
-    "headers": [],
-    "path": "/tag/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "SwiftUI 分类",
-    "headers": [],
-    "path": "/category/swiftui/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "区分 标签",
-    "headers": [],
-    "path": "/tag/%E5%8C%BA%E5%88%86/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "Xcode 分类",
-    "headers": [],
-    "path": "/category/xcode/",
+    "path": "/category/vue/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -4511,9 +4604,37 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "前端 分类",
+    "headers": [],
+    "path": "/category/%E5%89%8D%E7%AB%AF/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "动画 标签",
     "headers": [],
     "path": "/tag/%E5%8A%A8%E7%94%BB/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Xcode 分类",
+    "headers": [],
+    "path": "/category/xcode/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "区分 标签",
+    "headers": [],
+    "path": "/tag/%E5%8C%BA%E5%88%86/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "生命周期 标签",
+    "headers": [],
+    "path": "/tag/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/",
     "pathLocale": "/",
     "extraFields": []
   },
